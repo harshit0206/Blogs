@@ -1,0 +1,567 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009973;
+}
+	
+.maino{
+color: #000;
+padding: 10px 60px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+	
+.maino p{
+text-align: justify;
+}
+	
+.main-heado{
+color: #004d99;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.main-head2o{
+color: #000000;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.shiptopo{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/shiptop.jpg");
+width: calc(100% + 100px);
+height: 500px;
+margin-left: -50px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-heado{
+color: #004d00;
+font-size: 1.2em;
+}
+	
+.download-btn-head2o{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+	
+#wrapo {
+width: 100%;
+margin: 20px auto;
+text-align: center;
+align-items: center;
+justify-content: center;
+transition: .45s;
+}
+
+#buttono {
+display: inline-flex;
+height: 50px;
+width: 200px;
+border: 5px solid #006699;
+border-radius: 10px;
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 1.2em;
+font-weight: bold;
+letter-spacing: 1.5px;
+align-items: center;
+justify-content: center;
+transition: .45s;
+position: relative;
+cursor: pointer;
+background: #fff;
+overflow: hidden;
+}
+
+#buttono a {
+position: relative;
+text-decoration: none !important;
+color: #006699;
+transition: .45s;
+z-index: 5;
+}
+
+#translateo {
+transform: skewX(30deg);
+width: 170px;
+height: 52px;
+left: 15px;
+top: -1px;
+background: #006699;
+position: absolute;
+z-index: 1;
+opacity: 0;
+transition: all 0s;
+}
+
+#clicko{
+top: -100px;
+position: absolute;
+z-index: 2;
+transition: .45s;
+}
+
+#infoo{
+background: #222;
+width: 140px;
+left: 30px;
+position: absolute;
+transition: top .45s .45s !important;
+font-size: .7em;
+border-radius: 0 0 10px 10px;
+padding-top: 0;
+padding-bottom: 3px;
+margin: 0 auto;
+z-index: -1;
+opacity : 0;
+text-transform: none;
+top: 0;
+}
+
+#buttono:hover{
+box-shadow: 5px 5px 8px #aaa;
+transform: scale(1.07);
+overflow: visible;
+transition: .45s;
+}
+
+#buttono:hover #translateo {
+opacity: 1;
+}
+
+#buttono:hover #clicko {
+top: 13px;
+transition: .45s;
+}
+
+#buttono:hover #infoo {
+top: 55px;
+opacity: 1;
+}
+
+#buttono:hover a {
+color: transparent;
+transition: .45s;
+}
+
+.list-imgo{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.ol-imgo{
+width: 60%;
+margin: auto auto auto 3%;
+}
+
+.ol-imgo img{
+width: 100% !important;
+border: 2px solid #000;
+margin: 0 !important;
+box-sizing: border-box;
+}
+
+.olo{
+width: auto;
+margin: auto 3% auto auto !important;
+}
+	
+ul.ulo li{
+color: #b56637;
+font-size: 1.1em;
+margin-bottom: 20px;
+}
+	
+ul.ulo li p{
+color: #000;
+font-size: 1em;
+}
+
+.stepo{
+color: #5085a5;
+font-weight: bold;
+}
+
+.list-imageo{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.inner-imageo{
+width: 40%;
+margin: auto 0 auto auto;
+}
+
+.inner-imageo img{
+width: 90%;
+margin: auto auto auto auto !important;
+box-shadow: 5px 5px 5px #aaa;
+}
+
+.inner-listo{
+width: 60%;
+margin: auto auto auto 0;
+}
+	
+.inner-listo p{
+letter-spacing: 1.5px;
+}
+	
+a.blueo{
+border-bottom: 2px solid #3399ff !important;
+text-decoration: none !important;
+}
+	
+a.blueo:hover{
+color: #3399ff !important;
+}
+
+ol.ol-stepo{
+padding: 0 10px;
+}
+
+ol.ol-stepo li{
+color: #5085a5;
+font-size: 1.3rem;
+margin: 20px 0 !important;
+}
+	
+ol.ol-stepo li span{
+color: #000;
+font-size: 1.1rem;
+}
+	
+.shipbgo{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 70px);
+height: 268px;
+margin-left: -50px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+}
+	
+.shipbgo::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+a.btn-bottomo{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottomo:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.contactuso{
+margin-left: -50px;
+}
+
+img.shipo{
+left: -20px !important;
+}
+
+@media screen and (max-width: 1000px){
+
+.maino{
+padding: 10px 30px;
+}
+
+.shiptopo{
+width: calc(100% + 40px);
+height: 400px;
+margin-left: -20px;
+}
+
+.shipbgo{
+width: calc(100% + 10px);
+margin-left: -20px;
+}
+
+.contactuso{
+margin-left: -20px;
+}
+
+.ol-imgo{
+width: 55%;
+margin: auto auto auto 3%;
+}
+
+.inner-imageo{
+width: 50%;
+}
+
+.inner-imageo img{
+width: 90%;
+margin: auto auto auto auto !important;
+}
+		
+.inner-listo{
+width: 50%;
+}
+}
+
+@media screen and (max-width: 840px){
+
+#container{
+margin: 0 !important;
+}
+
+.maino{
+font-size: 14px !important;
+padding: 10px 0;
+}
+
+.shiptopo{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.shipbgo{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.contactuso{
+margin-left: 0px;
+}
+
+.ol-imgo{
+width: 60%;
+margin: auto auto auto 3%;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.shiptopo{
+height: 300px;
+}
+
+.ol-imgo{
+width: 100%;
+margin: auto auto auto auto;
+}
+
+.olo{
+width: auto;
+margin: 20px auto auto 20px !important;
+}
+		
+.inner-imageo{
+width: 100%;
+margin: 0 0 0 -20px;
+}
+		
+.inner-listo{
+width: 100%;
+}
+}
+</style>
+<div class="maino">
+<center>
+<div class="shiptopo"></div>
+</center>
+<br>
+<center>
+<div class="main-heado">
+<u>SHIPPING LABEL</u>
+</div>
+</center>
+<br>
+<p>A shipping label describes and identifies the contents of a container or shipment, as well as its origin, destination, weight, and carrier's name. The tracking number, date, package quantity, weight, address, and Ship Street, city and state are all important pieces of information. Each label is unique, and old labels cannot be used. A fresh label must be created for each delivery.</p>
+<p>The firm can monitor and control its orders with shipping labels, providing a positive customer experience, increasing brand loyalty and customer retention, and eventually increasing revenues. Packages might be delayed in transit, sent to the wrong location, or lost entirely without a proper mailing label. Any of these circumstances might result in a financial loss or a loss of consumer confidence, thus the shipping label is important.</p>
+<br>
+<center>
+<strong class="download-btn-heado">DRPU Barcode Generator Software</strong>
+<br>
+<div id="wrapo">
+<div class="buttono" id="buttono">
+<div id="translateo"></div>
+<div id="clicko">CLICK HERE</div>
+<div id="infoo">5.6MB .zip</div>
+<a href="https://www.barcodegenerator.us/downloads/barcode-professional-demo.zip" target="_blank" title="DRPU Barcode Label Maker Software - Professional">Download</a>
+</div>
+</div>
+</center>
+<br>
+<div class="main-heado">Information on shipping label</div>
+<br>
+<p>This is the information you may get from the shipping label if you pay close attention.</p>
+<br>
+<div class="list-imgo">
+<div class="ol-imgo"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/shiplabel.png"></center></div>
+<div class="olo">
+<div class="main-head2o">Buyer details</div>
+<ol>
+<li><span>Name</span></li>
+<li><span>Address</span></li>
+<li><span>Phone number</span></li>
+</ol>
+<div class="main-head2o">Carrier details</div>
+<ol start="4">
+<li><span>Name of courier company</span></li>
+<li><span>AWB number</span></li>
+<li><span>Routing code</span></li>
+</ol>
+<div class="main-head2o">Product details</div>
+<ol start="7">
+<li><span>Dimensions of product</span></li>
+<li><span>Payment method </span></li>
+<li><span>Weight of product</span></li>
+<li><span>Item details</span></li>
+</ol>
+<div class="main-head2o">Seller details</div>
+<ol start="11">
+<li><span>Name</span></li>
+<li><span>Address</span></li>
+<li><span>Mobile number</span></li>
+<li><span>Order ID</span></li>
+</ol>
+</div>
+</div>
+<br>
+<p>Orders without a shipping label may be delayed in transit, given to the incorrect address, or lost entirely. Any of these instances leads to an economic loss or a loss of consumer confidence, highlighting the necessity of a proper shipping label.</p>
+<br>
+<div class="main-heado">Importance of shipping labels</div>
+<ul class="ulo">
+<li>
+<strong class="stepo">Efficient transportation</strong>
+<div class="list-imageo">
+<div class="inner-listo">
+<p>Due to the existence of a shipping label, the item may be sorted using an automatic sorting system. As a result of the sorting mechanism, the shipment can be cleared quickly. The shipping label ensures that the package reaches the intended recipient in a timely manner. It also lowers costs for businesses, increases productivity, and boosts customer happiness.</p>
+</div>
+<div class="inner-imageo">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/ship1.png">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepo">Accurate as compared to the manual input</strong>
+<div class="list-imageo">
+<div class="inner-listo">
+<p>A barcode can be seen on shipping labels. The barcode is a very efficient and cost-effective method of data storage. It's less time-consuming than the manual entry technique, which is prone to human mistake.</p>
+</div>
+<div class="inner-imageo">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/ship2.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepo">Helps customers in tracking</strong>
+<div class="list-imageo">
+<div class="inner-listo">
+<p>Customers are constantly looking for a simple and convenient way to track their shipments. Company may provide its clients with an easy method to monitor their goods by using a shipping label. The tracking information provided on the delivery label may simply be used to monitor the product. Firm may keep its clients updated on the status of their cargo at every stage of the delivery process this way.</p>
+</div>
+<div class="inner-imageo">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/ship3.png">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepo">Lesser delivery time</strong>
+<div class="list-imageo">
+<div class="inner-listo">
+<p>The courier agency's workload is also reduced when all required information is provided on the shipping label. All they have to do is scan the label to get all the information about the consumer. When opposed to handwritten labels, printed labels have a lower risk of mistake. This ensures that the product is delivered on time and saves time.</p>
+</div>
+<div class="inner-imageo">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/ship4.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepo">Streamline the process</strong>
+<div class="list-imageo">
+<div class="inner-listo">
+<p>Company may simplify its packaging and shipping procedure by printing shipping labels. It will save hours each week, as well as a lot of unnecessary pressure, if firm can rapidly print big quantities of professional-looking labels and simply attach them to shipments.</p>
+</div>
+<div class="inner-imageo">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/ship5.png">
+</div>
+</div>
+</li>
+</ul>
+<br>
+<div class="main-heado">Step-by-Step Instructions to generate Shipping Labels</div>
+<br>
+<p><strong>To mark shipping label on a product, follow the steps below to generate labels using <a class="blueo" href="https://www.barcodegenerator.us/barcodegenerator/professional-barcode.html" target="_blank" title="DRPU Barcode Generator Software">DRPU Barcode Generator Software</a>.</strong></p>
+<ol class="ol-stepo">
+<li><span>Select Barcode Designing View Mode in <a class="blueo" href="https://www.barcodegenerator.us/barcodegenerator/professional-barcode.html" target="_blank" title="DRPU Barcode Generator Software">DRPU Barcode Generator Software</a> then add a new Barcode from Drawing Tools tab and go to its properties.</span></li>
+<center>
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/shipstep1.png" class="shipo">
+</center>
+<li><span>A pop-up will open now choose Linear or 2D Barcode and also select the barcode font that you want to create for your shipping label.</span></li>
+<li><span>Enter the barcode values. You can also align the Barcode value, Header &amp; Footer and can change Size, Font and Color for the Barcodes.</span></li>
+<center>
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/shipstep2.png" class="shipo">
+</center>
+<li><span>Customize your Barcode labels with additional information such as buyer, carrier, product and seller details.</span></li>
+<li><span>Print your shipping label using print settings and your label is now ready to use.</span></li>
+<center>
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/shipstep3.png" class="shipo">
+</center>
+</ol>
+<br>
+<div class="shipbgo">
+<div>
+<center>
+<strong class="download-btn-head2o" style="color: #eeeeee !important;">DRPU Barcode Label Maker Software</strong>
+<br><br>
+<a href="https://www.barcodegenerator.us/downloads/barcode-professional-demo.zip" target="_blank" title="DRPU Barcode Label Maker Software - Professional" class="btn-bottomo">DOWNLOAD</a>
+</center>
+</div>
+</div>
+<br>
+<div class="contactuso">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

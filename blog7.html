@@ -1,0 +1,414 @@
+<style>
+
+body{
+    word-break: unset !important;
+}
+.mainw{
+color: #000;
+background: #f5f5f5;
+padding: 10px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.main-headw{
+color: #008C76FF;
+font-size: 1.5em;
+font-weight: bold;
+}
+.btnw{
+color: #ffffff !important;
+width: 250px;
+font-weight: bold;
+background-color: #3FD2C7;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 1rem 1.5rem;
+}
+.btn-iconw{
+width: 15px;
+margin:0 0 0 0 !important;
+padding:0;
+}
+.btnw:hover .btn-iconw{
+transform:scale(1.4);
+}
+.btnw:hover{
+color: #ffffff;
+background-color: #3Fc2f7;
+}
+.btn-textw{
+font-size: 1.2em;
+}
+.download-btn-headw{
+color: #b56637;
+font-size: 1.2em;
+}
+.list-headw{
+color: #336699;
+font-size: 1.1em;
+font-weight: bold;
+margin-bottom: 15px;
+padding: 0 10px;
+}
+.benefit-listw ul li{
+color: #b56637;
+}
+.benefit-listw ul li span{
+color: #000;
+}
+.list-itemw{
+color: #b56637;
+}
+.image-paraw{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.imagew{
+width: 40%;
+margin: auto 0 auto auto;
+}
+.imagew img{
+width: 80%;
+}
+.paragraphw{
+width: 60%;
+margin: auto auto auto 0;
+}
+
+#wrapw {
+width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn-slidew {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #336699;
+    margin: 10px;
+    transition: .5s;
+}
+
+.btn-slidew:hover {
+    background-color: #336699;
+}
+
+.btn-slidew:hover span.circlew{
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color:#336699;
+}
+
+.btn-slidew:hover span.titlew {
+    left: 40px;
+    opacity: 0;
+}
+
+.btn-slidew:hover span.title-hoverw {
+    opacity: 1;
+    left: 40px;
+}
+
+.btn-slidew span.circlew{
+    display: block;
+    background-color:#336699;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.btn-slidew span.titlew,
+  .btn-slidew span.title-hoverw{
+    position: absolute;
+    left: 80px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #336699;
+    transition: .5s;
+}
+
+.btn-slidew span.title-hoverw {
+    left: 80px;
+    opacity: 0;
+}
+
+.btn-slidew span.title-hoverw {
+    color: #fff;
+}
+.btn-slidew span.circlew img{
+margin: 9px auto !important;
+}
+.btn-slidew:hover .circlew img{
+filter: invert(36%) sepia(69%) saturate(503%) hue-rotate(168deg) brightness(85%) contrast(86%);
+}
+
+.list-imgw{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.ul-imgw{
+width: 25%;
+margin: auto auto auto 8%;
+}
+.ul-imgw img:hover{
+transform: scale(1.1);
+box-shadow: 0 0 8px #000;
+}
+.ul-listw{
+padding-right: 15px;
+width: 40%;
+font-size: 1em;
+letter-spacing: 1.5px;
+background: rgba(51, 102, 153, 0.2);
+margin: auto 8% auto auto;
+}
+.img-top1w, .img-top2w{
+margin: -10px;
+}
+.img-top2w{
+display: none;
+}
+
+@media screen and (max-width: 1000px){
+.ul-listw{
+width: 45%;
+margin: auto 3% auto auto;
+}
+.ul-imgw{
+width: 35%;
+margin: auto auto auto 3%;
+}
+}
+@media screen and (max-width: 880px){
+.ul-imgw{
+width: 40%;
+margin: auto auto auto 2%;
+}
+.ul-listw{
+width: 50%;
+margin: auto 2% auto auto;
+}
+.img-top1w{
+display: none;
+}
+.img-top2w{
+display: block;
+}
+}
+
+@media screen and (max-width: 680px){
+#container{
+margin: 0 !important;
+padding: 0 !important;
+}
+.mainw{
+font-size: 16px;
+margin: 0 -10px !important;
+}
+.btnw{
+width: 200px;
+padding: 0.5rem 0.7rem;
+}
+.btn-textw{
+font-size: 1em;
+}
+.imagew{
+width: 100%;
+margin: auto 0 20px auto;
+}
+.paragraphw{
+width: 100%;
+margin: auto auto 20px 0;
+}
+.list-headw{
+padding: 0;
+}
+.imagew img{
+width: 60%;
+}
+.ul-imgw{
+width: 100%;
+margin: auto auto auto auto;
+}
+.ul-listw{
+padding-right: 15px;
+width: auto;
+letter-spacing: 1.5px;
+margin: auto auto auto auto;
+}
+.ul-imgw img{
+width: 60% !important;
+}
+}
+</style>
+
+<div class="mainw">
+
+<br>
+<center><div class="main-headw"><u>Barcodes for Warehouse</u></div></center>
+<br>
+
+<div class="img-top1w"><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/waretop.jpg" style="width:100%; height: auto;"></div>
+<div class="img-top2w"><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/waretop2.jpg" style="width:100%; height: auto;"></div>
+
+<p>Many warehouses are moving to automation technologies to improve efficiency and reduce costs. Out of these technologies, barcode scanning is the most popular technology. A typical warehouse manages shipping, receiving, returns, labor tracking and packing activities that often happens simultaneously.</p>
+<p>Barcodes are used to provide a unique identifier to each item so it becomes easy to transfer them between different locations within and outside a warehouse. As a key of efficient inventory management, it becomes a convenient and reliable way to track goods by implementing barcode technology.</p>
+
+<br>
+<div>
+<center>
+<strong class="download-btn-headw">DRPU Barcode software for Industrial (Non-Retail) Businesses</strong>
+<br><br>
+
+<div id="wrapw">
+<a href="https://www.barcodegenerator.us/downloads/industrial-non-retail-barcode.zip" target="_blank" title="DRPU Barcode software for Industrial (Non-Retail) Businesses" class="btn-slidew">
+  <span class="circlew"><img  src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+  <span class="titlew">DOWNLOAD</span>
+  <span class="title-hoverw">Click here</span>
+</a>
+</div>
+
+<!--<a href="https://www.barcodegenerator.us/downloads/industrial-non-retail-barcode.zip" target="_blank" title="DRPU Barcode software for Industrial (Non-Retail) Businesses" class="btnw" style="text-decoration: none;"><img class="btn-iconw" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"><span class="btn-textw">DOWNLOAD</span></a>-->
+</center>
+</div>
+
+<br>
+<p>Moving bulk containers and products easily through several unique steps is associated to efficiency of a warehouse. While performing inventory counts and other activities by using spreadsheets and manual data entry can lead to errors and prevents staff from responding to changes quickly.</p>
+<p>Barcodes can be used in warehouse paperwork, for employee identification to track who did what, on products and on cartons to identify and track them. Warehouse barcode labels allow tagging each warehouse location, rack and container with a label that can be easily scanned at any time.</p>
+
+<br>
+<div class="benefit-listw">
+<div class="list-headw">Barcodes provide a few unique benefits that are important for warehousing industry:</div>
+
+<div class="list-imgw">
+
+<div class="ul-imgw">
+<center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/warefeatures.png" style="width: 100%;"></center>
+</div>
+
+<div class="ul-listw"><ul>
+<li><span>Better inventory management</span></li>
+<li><span>Faster processing speed</span></li>
+<li><span>Track employee performance</span></li>
+<li><span>Reduced operational costs</span></li>
+<li><span>Increased productivity</span></li>
+<li><span>Error elimination</span></li>
+<li><span>Enhanced accuracy</span></li>
+<li><span>Improved scheduling of activities</span></li>
+</ul></div>
+
+</div>
+
+</div>
+
+<br>
+<div class="main-headw">Barcode types for Warehousing Industry</div>
+
+<br>
+<p>In the same warehouse, a number of different barcodes are used to identify boxes and products. Sometimes same product has multiple types of barcodes on it. These barcodes need to be captured quickly, often from a distance.
+</p>
+
+<br>
+<div class="list-headw">Commonly found barcodes in Warehousing Industry include:</div>
+<ul>
+<li><strong class="list-itemw">Code 128</strong>
+
+<div class="image-paraw">
+<div class="paragraphw">
+<p>It is a high-density code commonly found on shipment labels and supports all 128 ASCII symbols in the ASCII character set.</p></div>
+<div class="imagew"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wareCODE128.png"></center></div>
+</div>
+
+</li>
+<li><strong class="list-itemw">UPC</strong>
+
+<div class="image-paraw">
+<div class="paragraphw">
+<p>It is used to label individual products and supports 12-digit number only.</p></div>
+<div class="imagew"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wareUPC.png"></center></div>
+</div>
+
+</li>
+<li><strong class="list-itemw">EAN</strong>
+
+<div class="image-paraw">
+<div class="paragraphw">
+<p>It is also used to label individual products and supports 13-digit number only.</p></div>
+<div class="imagew"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wareEAN.png"></center></div>
+</div>
+
+</li>
+<li><strong class="list-itemw">MSI</strong>
+
+<div class="image-paraw">
+<div class="paragraphw">
+<p>It is used for matching shelves with the products in warehouse and supports numbers only.</p></div>
+<div class="imagew"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wareMSI.png"></center></div>
+</div>
+
+</li>
+</ul>
+
+<br>
+<p>Implementation of a barcode system in a warehouse, adds significant value to its operations and can reduce operational costs and lead to a significant Return Of Investment by automating key steps in the inventory flow process and reducing manual data entry.</p>
+
+<br>
+<hr>
+<br>
+
+<div>
+<center>
+<strong class="download-btn-headw">DRPU Barcode software for Industrial (Non-Retail) Businesses</strong>
+<br><br>
+
+<div id="wrapw">
+<a href="https://www.barcodegenerator.us/downloads/industrial-non-retail-barcode.zip" target="_blank" title="DRPU Barcode software for Industrial (Non-Retail) Businesses" class="btn-slidew">
+  <span class="circlew"><img  src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+  <span class="titlew">DOWNLOAD</span>
+  <span class="title-hoverw">Click here</span>
+</a>
+</div>
+
+<!--<a href="https://www.barcodegenerator.us/downloads/industrial-non-retail-barcode.zip" target="_blank" title="DRPU Barcode software for Industrial (Non-Retail) Businesses" class="btnw" style="text-decoration: none;"><img class="btn-iconw" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"><span class="btn-textw">DOWNLOAD</span></a>-->
+</center>
+</div>
+
+<br>
+<div class="contactusw">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span><a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a></span>
+</div>
+</div>
+<br>
+
+</div>

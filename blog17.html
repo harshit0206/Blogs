@@ -1,0 +1,512 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009933;
+}
+
+.mainp{
+color: #000;
+padding:0 20px;
+font-size: 18px;
+font-weight: 300;
+letter-spacing: 1.5px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+background-color: #f7f9fb;
+}
+	
+.main-headp{
+color: #004080;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.waretopp{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/warestoragetop.jpg");
+width: calc(100% + 40px);
+height: 382px;
+margin-left: -20px;
+background-size: cover;
+background-position: center;
+}
+	
+ul.storagep li{
+color: #000;
+margin: 0 10px 20px 10px;
+}
+	
+ul.storagep li span{
+color: #000;
+}
+	
+.download-btn-headp{
+color: #004d00;
+font-size: 1.2em;
+}
+	
+.download-btn-head2p{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+	
+#wrapp {
+width: 100%;
+margin: 20px auto;
+text-align: center;
+align-items: center;
+justify-content: center;
+transition: .45s;
+}
+
+#buttonp {
+display: inline-flex;
+height: 50px;
+width: 200px;
+border: 5px solid #006699;
+border-radius: 10px;
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 1.2em;
+font-weight: bold;
+letter-spacing: 1.5px;
+align-items: center;
+justify-content: center;
+transition: .45s;
+position: relative;
+cursor: pointer;
+background: #fff;
+overflow: hidden;
+}
+
+#buttonp a {
+position: relative;
+text-decoration: none !important;
+color: #006699;
+transition: .45s;
+z-index: 5;
+}
+
+#translatep {
+transform: skewX(30deg);
+width: 170px;
+height: 52px;
+left: 15px;
+top: -1px;
+background: #006699;
+position: absolute;
+z-index: 1;
+opacity: 0;
+transition: all 0s;
+}
+
+#clickp{
+top: -100px;
+position: absolute;
+z-index: 2;
+transition: .45s;
+}
+
+#infop{
+background: #222;
+width: 140px;
+left: 30px;
+position: absolute;
+transition: top .45s .45s !important;
+font-size: .7em;
+border-radius: 0 0 10px 10px;
+padding-top: 0;
+padding-bottom: 3px;
+margin: 0 auto;
+z-index: -1;
+opacity : 0;
+text-transform: none;
+top: 0;
+}
+
+#buttonp:hover{
+box-shadow: 5px 5px 8px #aaa;
+transform: scale(1.07);
+overflow: visible;
+transition: .45s;
+}
+
+#buttonp:hover #translatep {
+opacity: 1;
+}
+
+#buttonp:hover #clickp {
+top: 13px;
+transition: .45s;
+}
+
+#buttonp:hover #infop {
+top: 55px;
+opacity: 1;
+}
+
+#buttonp:hover a {
+color: transparent;
+transition: .45s;
+}
+	
+.warebgp{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 10px);
+height: 268px;
+margin-left: -20px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+margin-top: 30px;
+}
+	
+.warebgp::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+a.btn-bottomp{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottomp:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+
+.typep{
+padding: 0 20px;
+margin: 20px 0;
+}
+
+.type-imgp{
+width: 35%;
+float: right;
+margin: 0 0 0 20px !important;
+}
+
+.type-imgp img{
+width: 100% !important;
+margin: 0 !important;
+}
+	
+ul.ulp li{
+color: #b56637;
+font-size: 1.1em;
+margin-bottom: 20px;
+}
+	
+ul.ulp li p{
+color: #000;
+font-size: 1em;
+}
+
+.stepp{
+color: #5085a5;
+font-weight: bold;
+}
+
+.list-imagep{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.inner-imagep{
+width: 30%;
+margin: auto 0 auto auto;
+}
+
+.inner-imagep img{
+width: 80%;
+margin: auto auto auto 0 !important;
+box-shadow: 5px 5px 5px #aaa;
+}
+
+.inner-listp{
+width: 65%;
+margin: auto auto auto 0;
+}
+	
+.inner-listp p{
+line-height: 2em;
+letter-spacing: 1.5px;
+font-size: 1em;
+}
+	
+a.bluep{
+border-bottom: 2px solid #3399ff !important;
+text-decoration: none !important;
+}
+	
+a.bluep:hover{
+color: #3399ff !important;
+}
+
+@media screen and (max-width: 1000px){		
+
+.waretopp{
+height:300px;
+}
+
+.inner-imagep{
+width: 50%;
+}
+
+.inner-imagep img{
+width: 70%;
+margin: auto auto auto auto !important;
+}
+		
+.inner-listp{
+width: 50%;
+}
+		
+.inner-listp p{
+line-height: 1.5em;
+}
+
+.type-imgp{
+width: 45%;
+}
+}
+
+@media screen and (max-width: 840px){
+
+.mainp{
+font-size: 14px !important;
+padding: 0 10px;
+}
+	
+.waretopp{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.warebgp{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.inner-imaget img{
+width: 80%;
+}
+}
+
+@media screen and (max-width: 760px){
+
+.type-imgp{
+float: none;
+width: 100%;
+margin: 0 auto 20px auto !important;
+}
+
+.type-imgp img{
+width: 75% !important;
+}
+}
+
+@media screen and (max-width: 680px){
+
+#container{
+margin: 0 !important;
+}
+
+.mainp{
+margin: 0 -10px;
+}
+		
+.waretopp{
+height:200px;
+}
+
+.typep{
+padding: 0 10px;
+}
+
+.type-imgp img{
+width: 95% !important;
+}
+		
+.inner-imagep{
+width: 100%;
+margin: 0 0 0 -20px;
+}
+
+.inner-imagep img{
+width: 90%;
+}
+		
+.inner-listp{
+width: 100%;
+}
+}
+</style>
+<div class="mainp">
+<center>
+<div class="waretopp"></div>
+</center>
+<br>
+<p>Technology has the ability to influence and shape elements of modern life. Barcode is one of the technologies that we presently utilize. By incorporating barcodes into every operation of the warehouse management system, it is possible to reduce human error while still providing precise data in real time. In the warehouse management system, barcodes also aid in the integration of all processes and increase efficiency.</p>
+<p>Setting up and maintaining a productive warehouse may be challenging. Large quantities of goods can result in a variety of waste, which is why numbering the warehouse’s storage system is important.</p>
+<br>
+<div class="main-headp">Warehouse storage systems</div>
+<br>
+<p>One of the first stages in creating a properly organized and effective warehouse is determining which sort of storage system best matches the plan.</p>
+<p><strong>There are several categories of systems available:</strong></p>
+<ul class="storagep">
+<li><span>Pallet rack systems</span></li>
+<li><span>Mezzanines</span></li>
+<li><span>Static shelving</span></li>
+<li><span>Wire partitions</span></li>
+<li><span>Multi-tier racking</span></li>
+</ul>
+<br>
+<center>
+<strong class="download-btn-headp">DRPU Barcode Label Maker Software</strong>
+<br>
+<div id="wrapp">
+<div class="buttonp" id="buttonp">
+<div id="translatep"></div>
+<div id="clickp">CLICK HERE</div>
+<div id="infop">5.7MB .zip</div>
+<a href="https://www.barcodegenerator.us/downloads/industrial-non-retail-barcode.zip" target="_blank" title="DRPU Barcode Software for Industrial (Non-Retail) Businesses">Download</a>
+</div>
+</div>
+</center>
+<br>
+<br>
+<div class="main-headp">Identify unique location elements in warehouse</div>
+<div class="typep">
+<div class="type-imgp">
+<center>
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/ware1.jpg">
+</center>
+</div>
+<div class="type-parap">
+<p>Implement an efficient warehouse location mapping after choosing a warehouse storage solution (identifying and naming all the shelving positions).</p>
+<p>A warehouse location numbering system is just a set of numbers that identify the various locations inside a warehouse. To make it easier to locate goods, the warehouse storage numbering system should be as detailed as feasible. Each element of storage location, such as aisle, shelf or level, and position on the shelf from left to right, should be identified by the location system.</p>
+<p>The structure and organization of a warehouse are reflected in most warehouse location IDs, which include four to six fields.</p>
+</div>
+</div>
+<br>
+<div class="main-headp">Let’s look at the most common nomenclature fields</div>
+<br>
+<ul class="ulp">
+<li>
+<strong class="stepp">Section or Zone</strong>
+<div class="list-imagep">
+<div class="inner-listp">
+<p>Zone is used to designate a section of the warehouse that is unique from others. For example, zones might be used for bulk storage, receiving, staging, etc.</p>
+</div>
+<div class="inner-imagep">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/warezone.png">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepp">Aisle</strong>
+<div class="list-imagep">
+<div class="inner-listp">
+<p>Each aisle should be identified with a number. If there are more than 9 aisles then start numbering with 01.  This will give up to 99 aisles.</p>
+</div>
+<div class="inner-imagep">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wareaisle.jpeg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepp">Rack or Bay</strong>
+<div class="list-imagep">
+<div class="inner-listp">
+<p>Rack or bay is the space between the rack uprights. Aisle numbering and bay numbering is the same thing.</p>
+</div>
+<div class="inner-imagep">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/warerack.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepp">Level or shelf</strong>
+<div class="list-imagep">
+<div class="inner-listp">
+<p>Characters are used to identify warehouse level schemes. In the vast majority of cases, the floor level will be Level A. The following levels are frequently referred to as B/C/D/E/F.</p>
+</div>
+<div class="inner-imagep">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/warelevel.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepp">Position or Slot</strong>
+<div class="list-imagep">
+<div class="inner-listp">
+<p>The number of places on a shelf or rack is usually limited to nine. The approach of numbering positions with two digits is favored (01, 02, 03...).</p>
+</div>
+<div class="inner-imagep">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wareslot.jpg">
+</div>
+</div>
+</li>
+</ul>
+<br>
+<p><a class="bluep" href="https://www.barcodegenerator.us/barcodegenerator/barcode-industrial-warehousing.html" target="_blank" title="DRPU Barcode Label Maker">DRPU Barcode Label Maker Software</a> for warehouse numbering systems. The labels have a scannable code that provides workers with information about the specific item they need to pick in a warehouse. When a worker scans a barcode, s/he will be able to learn how much inventory is on hand, where it is in the warehouse, and how long it has been there.</p>
+<div class="bottom-imagep"><center>
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/warebottom.jpg">
+</center></div>
+<p>Finding the aisle number, shelf number, and position for each specific item is a work of seconds using barcode labeling. This allows staff to accomplish their tasks as quickly as possible, resulting in improved warehouse operations.</p>
+<br>
+<div class="warebgp">
+<div>
+<center>
+<strong class="download-btn-head2p" style="color: #eeeeee !important;">DRPU Barcode Label Maker Software</strong>
+<br>
+<br>
+<a href="https://www.barcodegenerator.us/downloads/industrial-non-retail-barcode.zip" target="_blank" title="DRPU Barcode Software for Industrial (Non-Retail) Businesses" class="btn-bottomp">DOWNLOAD</a>
+</center>
+</div>
+</div>
+<br>
+<div class="contactusp">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

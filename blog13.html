@@ -1,0 +1,496 @@
+<style>
+	body{
+		word-break: unset !important;
+	}
+	
+	::selection {
+		color: #fff;
+		background: #009933;
+	}
+	
+	.maint{
+		color: #000;
+		padding: 10px;
+		font-size: 17px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+		background-color: #f7f9fb;
+	}
+	
+	.main-headt{
+		color: #004080;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	
+	.main-head2t{
+		color: #000000;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	
+	.li-btnt{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: space-between;
+		align-items: center;
+		background: #dee6ed;
+		padding:18px 20px 0 20px;
+		margin:0 -10px;
+	}
+	
+	.usest{
+		width: 45%;
+	}
+	
+	.uses-btnt{
+		width: 45%;	
+	}
+	
+	#wrapt {
+		width: 100%;
+		margin: 20px auto;
+		text-align: center;
+	}
+	
+	.btn-slidet {
+		position: relative;
+		display: inline-block;
+		height: 50px;
+		width: 200px;
+		line-height: 50px;
+		padding: 0;
+		border-radius: 50px;
+		background: #fdfdfd;
+		border: 2px solid #336699;
+		margin: 10px;
+		transition: 1s;
+	}
+	
+	.btn-slidet:hover {
+		background-color: #336699;
+		box-shadow: 5px 5px 8px #aaa;
+		transform: scale(1.07);
+	}
+	
+	.btn-slidet:hover span.circlet{
+		left: 100%;
+		margin-left: -45px;
+		background-color: #fdfdfd;
+		color:#336699;
+	}
+	
+	.btn-slidet:hover span.titlet {
+		left: 40px;
+		opacity: 0;
+	}
+	
+	.btn-slidet:hover span.title-hovert {
+		opacity: 1;
+		left: 40px;
+	}
+	
+	.btn-slidet span.circlet{
+		display: block;
+		background-color:#336699;
+		color: #fff;
+		position: absolute;
+		float: left;
+		margin: 5px;
+		line-height: 42px;
+		height: 40px;
+		width: 40px;
+		top: 0;
+		left: 0;
+		transition: 1s;
+		border-radius: 50%;
+	}
+	
+	.btn-slidet span.titlet, .btn-slidet span.title-hovert{
+		position: absolute;
+		left: 80px;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 16px;
+		font-weight: bold;
+		color: #336699;
+		transition: 1s;
+	}
+	
+	.btn-slidet span.title-hovert {
+		left: 80px;
+		opacity: 0;
+	}
+	
+	.btn-slidet span.title-hovert {
+		color: #fff;
+	}
+	
+	.btn-slidet span.circlet img{
+		margin: 9px auto !important;
+	}
+	
+	.btn-slidet:hover .circlet img{
+		filter: invert(36%) sepia(69%) saturate(503%) hue-rotate(168deg) brightness(85%) contrast(86%);
+	}
+	
+	.usest ul li{
+		color: #b56637;
+		margin: 0 10px;
+	}
+	
+	.usest ul li span{
+		color: #000;
+	}
+	
+	ol.olt li{
+		color: #b56637;
+		font-size: 1.2rem;
+	}
+	
+	ol.olt li p{
+		color: #000;
+		font-size: 1rem;
+	}
+
+	.stept{
+		color: #5085a5;
+		font-weight: bold;
+	}
+
+	.list-imaget{
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.inner-imaget{
+		width: 30%;
+		margin: auto 0 auto auto;
+	}
+
+	.inner-imaget img{
+		width: 80%;
+		margin: auto auto auto 0 !important;
+		box-shadow: 5px 5px 5px #aaa;
+	}
+
+	.inner-listt{
+		width: 65%;
+		margin: auto auto auto 0;
+	}
+	
+    .inner-listt p{
+        line-height: 3em;
+		letter-spacing: 1.5px;
+		font-size: 1.1em;
+    }
+	
+	.manubgt{
+		background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+		width: calc(100% - 10px);
+		height: 268px;
+		margin-left: -10px;
+		background-size: cover;
+		background-position: left;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: flex-end;
+		z-index: 1;
+		position: relative;
+		padding: 15px;
+	}
+	
+	.manubgt::before{
+		content: "";
+		position: absolute;
+		z-index: -1;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #000;
+		opacity: 0.3;
+	}
+	
+	a.btn-bottomt{
+		color: #fff;
+		padding: 15px 20px;
+		text-decoration: none !important;
+		border: 3px solid #fff;
+		font-size: 1.2em;
+		letter-spacing: 2px;
+		transition: 1s;
+		width: 137px;
+	}
+	
+	a.btn-bottomt:hover{
+		color: #00e6e6;
+		border: 3px solid #00e6e6;
+		transform: scale(1.07);
+	}
+	
+	.download-btn-headt{
+		color: #b56637;
+		font-size: 1.2em;
+	}
+	
+	.download-btn-head2t{
+		margin: 30px 50px:
+		color: #eeeeee !important;
+		font-size: 1.3em;
+		text-shadow: 5px 4px 5px #000;
+	}
+	
+	.manutopt{
+		background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/manutop.jpeg");
+		width: calc(100% + 20px);
+		height: 382px;
+		margin-left: -10px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	@media screen and (max-width: 1000px){
+        .inner-imaget{
+			width: 50%;
+		}
+		
+		.manutopt{
+			height:300px;
+		}
+
+	    .inner-imaget img{
+			width: 60%;
+			margin: auto auto auto auto !important;
+        }
+		
+		.inner-listt{
+			width: 50%;
+		}
+		
+        .inner-listt p{
+            line-height: 1.5em;
+        }
+    }
+
+	@media screen and (max-width: 840px){
+		.inner-imaget{
+			width: 50%;
+		}
+
+	    .inner-imaget img{
+			width: 80%;
+        }
+		
+		.inner-listt{
+			width: 50%;
+		}
+		
+		.maint{
+			font-size: 14px !important;
+		}
+	}
+
+	@media screen and (max-width: 740px){
+        .usest{
+			width: 100%;
+		}
+	
+		.uses-btnt{
+			width: 100%;	
+		}
+		
+		.inner-imaget{
+			width: 50%;
+		}
+
+	    .inner-imaget img{
+			width: 80%;
+        }
+		
+		.inner-listt{
+			width: 50%;
+		}
+    }
+
+	@media screen and (max-width: 680px){
+		#container{
+			margin: 0 !important;
+		}
+
+		.maint{
+			margin: 0 -10px;
+		}
+		
+		.manutopt{
+			height:200px;
+		}
+		
+		.inner-imaget{
+			width: 100%;
+			margin: 0 0 0 -20px;
+		}
+
+		.inner-imaget img{
+			width: 90%;
+		}
+		
+		.inner-listt{
+			width: 100%;
+		}
+        
+		ol.olt li{
+            margin-top: 30px;
+        }
+	}
+</style>
+<div class="maint">
+	<br>
+	<center>
+		<div class="main-headt">
+		<u>Barcodes in Automation of Manufacturing Process</u>
+		</div>
+	</center>
+	<br>
+	<center>
+		<div class="manutopt"></div>
+		<!--<div class="img-top1u" style="margin: 0 -10px 0 -10px;">
+			<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/manutop.jpeg" style="width:100%; height: auto;">
+		</div>-->
+	</center>
+	<br>
+	<p>Manufacturing industry is adopting automation in manufacturing processes as it is an important tool for any manufacturing business. </p>
+	<div class="li-btnt">
+		<div class="usest">
+			<div class="uses-headt"><strong>Barcode helps in automating manufacturing such as:</strong></div>
+			<ul class="uses-ult">
+				<li><span>Better response time</span></li>
+				<li><span>Improving product quality</span></li>
+				<li><span>Increasing labor productivity</span></li>
+				<li><span>Reducing costs and production waste</span></li>
+			</ul>
+		</div>
+		<div class="uses-btnt">
+			<center>
+				<strong class="download-btn-headt">DRPU Barcode Generator for Manufacturing Industry</strong>
+				<br>
+				<div id="wrapt">
+					<a href="https://www.barcodegenerator.us/downloads/industrial-non-retail-barcode.zip" target="_blank" title="DRPU Barcode Generator for Manufacturing Industry" class="btn-slidet">
+						<span class="circlet"><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+						<span class="titlet">DOWNLOAD</span>
+						<span class="title-hovert">Click here</span>
+					</a>
+				</div>
+			</center>
+		</div>
+	</div>
+	<br>
+	<p>The production and supply chain in manufacturing industry depends on real-time data to provide information to the whole manufacturing operations. As more companies turned for improvement in processes and reduction in costs, barcoding helps in enhancing their manufacturing system.</p>
+	<p>The barcodes provide quick and accurate data, which is essential for the efficient and fast operation of the production line.</p>
+	<br>
+	<div class="main-head2t">Automation in manufacturing with barcodes:</div>
+	<br>
+	<p>In manufacturing process, barcoding is used to identify parts or containers of ingredients, quality control, batch tracking and finished products for shipping.</p>
+	<p>Implementation of barcodes provides multiple benefits, including costs saving and less typing when entering the data. Instead of a warehouse worker conforming an item number and then might entering the wrong item number, s/he can just take a barcode scanner and use it for the correct item number.</p>
+	<br>
+	<div class="main-head2t">Manufacturing Applications of barcodes:</div>
+	<ol class="olt">
+		<li>
+			<strong class="stept">Receiving</strong>
+			<div class="list-imaget">
+				<div class="inner-listt">
+					<p>Raw materials arriving in a manufacturing industry have barcode labels on their packaging to meet the industry’s requirements for materials management.</p>
+				</div>
+				<div class="inner-imaget">
+					<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/manuf1.jpg">
+				</div>
+			</div>
+		</li>
+		<li>
+			<strong class="stept">Raw Material Inventory</strong>
+			<div class="list-imaget">
+				<div class="inner-listt">
+					<p>The worker scans both the package and the storage location to transfer the material to an inventory location and the data automatically recorded in the system.</p>
+				</div>
+				<div class="inner-imaget">
+					<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/manuf2.jpg">
+				</div>
+			</div>
+		</li>
+		<li>
+			<strong class="stept">Picking</strong>
+			<div class="list-imaget">
+				<div class="inner-listt">
+					<p>The workers scan the barcodes to retrieve raw materials from inventory and complete the transfer operation.</p>
+				</div>
+				<div class="inner-imaget">
+					<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/manuf3.jpg">
+				</div>
+			</div>
+		</li>
+		<li>
+			<strong class="stept">Work in process</strong>
+			<div class="list-imaget">
+				<div class="inner-listt">
+					<p>Labels on each item are scanned to confirm the right parts and quantities are picked. Additional barcode labels can be applied to identify the item by its new part number. Barcodes are used to identify between batches and lots.</p>
+				</div>
+				<div class="inner-imaget">
+					<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/manuf4.jpg">
+				</div>
+			</div>
+		</li>
+		<li>
+			<strong class="stept">Finished Goods</strong>
+			<div class="list-imaget">
+				<div class="inner-listt">
+					<p>Barcodes are scanned to identify the goods. If no sales order for a product exists, it is taken to a warehouse location for inventory. On order, it is retrieved from the finished goods inventory with the help barcode labels.</p>
+				</div>
+				<div class="inner-imaget">
+					<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/manuf5.jpg">
+				</div>
+			</div>
+		</li>
+		<li>
+			<strong class="stept">Shipping</strong>
+			<div class="list-imaget">
+				<div class="inner-listt">
+					<p>In the shipping department, the barcode on the item is scanned and new labels are applied with shipping information. The labels ensure right delivery of product and to track progress during shipment.</p>
+				</div>
+				<div class="inner-imaget">
+					<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/manuf6.jpg">
+				</div>
+			</div>
+		</li>
+	</ol>
+	<br>
+	<div class="manubgt">
+		<div>
+			<center>
+				<strong class="download-btn-head2t" style="color: #eeeeee !important;">DRPU Barcode Generator for Manufacturing Industry</strong>
+				<br><br>
+				<a href="https://www.barcodegenerator.us/downloads/industrial-non-retail-barcode.zip" target="_blank" title="DRPU Barcode Generator for Manufacturing Industry" class="btn-bottomt">DOWNLOAD</a>
+			</center>
+		</div>
+	</div>
+	<br>
+	<div class="contactust">
+		<strong>For more information contact us:</strong>
+		<br>
+		<div>
+			<strong>Email:&nbsp;</strong>
+			<span>support@barcodegenerator.us</span>
+		</div>
+		<div>
+			<strong>Website:&nbsp;</strong>
+			<span>
+				<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+			</span>
+		</div>
+	</div>
+	<br>
+</div>

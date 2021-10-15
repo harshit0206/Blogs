@@ -1,0 +1,479 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009973;
+}
+	
+.mains{
+color: #000;
+padding: 10px 60px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+	
+.mains p{
+text-align: justify;
+}
+	
+.main-heads{
+color: #004d99;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.main-head2s{
+color: #000000;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.pharmatops{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/pharmatop.jpg");
+width: calc(100% + 100px);
+height: 500px;
+margin-left: -50px;
+background-size: cover;
+background-position: center;
+}
+	
+.uses-uls li{
+color: #000;
+margin: 0 10px;
+}
+	
+.uses-uls li span{
+color: #000;
+}
+	
+.download-btn-heads{
+color: #004d99;
+font-size: 1.2em;
+}
+	
+.download-btn-head2s{
+margin: 30px 50px:
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+	
+#wraps {
+width: 100%;
+margin: 20px auto;
+text-align: center;
+}
+
+.buttons {
+display: inline-flex;
+height: 50px;
+width: 200px;
+border: 5px solid #009973;
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 1.2em;
+font-weight: bold;
+letter-spacing: 1.5px;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transition: .5s;
+}
+
+#buttons {
+position: relative;
+overflow: hidden;
+cursor: pointer;
+}
+
+#buttons a {
+position: relative;
+transition: all .5s ease-Out;
+text-decoration: none !important;
+color: #009973;
+}
+
+#translates {
+transform: rotate(50deg);
+width: 105%;
+height: 250%;
+left: -200px;
+top: -30px;
+background: #009973;
+position: absolute;
+transition: all .5s ease-Out;
+}
+
+#buttons:hover{
+box-shadow: 5px 5px 8px #aaa;
+transform: scale(1.07);
+}
+
+#buttons:hover #translates {
+left: 0;
+}
+
+#buttons:hover a {
+color: #fff;
+}
+
+ol.ols{
+padding: 0 20px;
+}
+	
+ol.ols li{
+color: #000;
+font-size: 1.5rem;
+margin: 30px 0;
+}
+	
+ol.ols li span{
+color: #000;
+font-size: 1.2rem;
+}
+	
+.pharmabgs{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 70px);
+height: 268px;
+margin-left: -50px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+}
+	
+.pharmabgt::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+a.btn-bottoms{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottoms:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.contactuss{
+margin-left: -50px;
+}
+	
+table.list-tables{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+	
+table.list-tables th{
+font-weight: bold;
+color: #000;
+}
+	
+table.list-tables th.values{
+text-align: right;
+}
+	
+table.list-tables th.value2s{
+text-align: left;
+}
+	
+th .blues{
+color: #3399ff !important;
+font-size: 1.5rem !important;
+border: none !important;
+}
+	
+a.blues{
+border-bottom: 2px solid #3399ff !important;
+text-decoration: none !important;
+}
+	
+a.blues:hover{
+color: #3399ff !important;
+}
+	
+table.datamatrixs tr th{
+padding: 0 !important;
+text-align: left !important;
+}
+	
+table.datamatrixs tr td{
+padding: 0 !important;
+}
+
+img.pharmas{
+max-width: 100% !important;
+}
+
+@media screen and (max-width: 1000px){
+
+.mains{
+padding: 10px 30px;
+}
+
+.pharmatops{
+width: calc(100% + 40px);
+height: 400px;
+margin-left: -20px;
+}
+
+.pharmabgs{
+width: calc(100% + 10px);
+margin-left: -20px;
+}
+
+.contactuss{
+margin-left: -20px;
+}
+}
+
+@media screen and (max-width: 840px){
+
+#container{
+margin: 0 !important;
+}
+
+.mains{
+font-size: 14px !important;
+padding: 10px 0;
+}
+
+.pharmatops{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.pharmabgs{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.contactuss{
+margin-left: 0px;
+}
+
+ol.ols{
+padding: 0 10px;
+}
+
+ol.ols li{
+font-size: 1.3rem;
+}
+	
+ol.ols li span{
+color: #000;
+font-size: 1.1rem;
+}
+
+th .blues{
+font-size: 1.3rem !important;
+}
+
+img.pharmas{
+min-width: calc(100% + 20px) !important;
+width: calc(100% + 20px) !important;
+margin-left: -10px !important;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.pharmatops{
+height: 300px;
+}
+
+ol.ols{
+padding: 0;
+}
+
+ol.ols li{
+font-size: 1.1rem;
+}
+	
+ol.ols li span{
+color: #000;
+font-size: 1rem;
+}
+
+th .blues{
+font-size: 1.1rem !important;
+}
+
+table.list-tables{
+margin-left: -20px;
+}
+
+table.list-tables tr th{
+padding: 12px 2px !important;
+}
+}
+
+@media screen and (max-width: 300px){
+ol.ols li{
+font-size: 1rem;
+}
+
+th .blues{
+font-size: 1rem !important;
+}
+
+table.list-tables{
+margin-left: -40px;
+}
+}
+
+</style>
+<div class="mains">
+<br>
+<center>
+<div class="main-heads">
+<u>Pharmacode Barcode</u>
+</div>
+</center>
+<br>
+<center>
+<div class="pharmatops"></div>
+</center>
+<br>
+<p>Pharmacode is used in the pharmaceutical industry as a packing control system designed to prevent packing errors. The purpose of pharmacode is to ensure that the pharmaceutical product package is the correct product, along with the correct supporting documentation. It is a robust symbol, designed to survive printing errors and post-production damage.</p>
+<div class="usess">
+<div class="uses-heads">
+<strong>Barcoding's advantages in the pharmaceutical industry include:</strong>
+</div>
+<ul class="uses-uls">
+<li><span>Inventory tracking and controls</span></li>
+<li><span>Logistics and materials tracking</span></li>
+<li><span>Tracking of reusable equipments and supplies</span></li>
+<li><span>Retracing the supply chain</span></li>
+</ul>
+</div>
+<br>
+<center>
+<strong class="download-btn-heads">DRPU Barcode Label Maker Software</strong>
+<br>
+<div id="wraps">
+<div class="buttons" id="buttons">
+<div id="translates"></div>
+<a href="https://www.barcodegenerator.us/downloads/healthcare-barcode-software.zip" target="_blank" title="DRPU Barcode Label Maker Software">Download</a>
+</div>
+</div>
+</center>
+<br>
+<br>
+<p>The FDA Barcode Rule mandates that items be labelled with a linear barcode that includes the product's National Drug Code on the other hand the DSCSA mandates that items be labelled with a DataMatrix barcode that includes the product's National Drug Code, Serial Number, Lot Number, and Expiry Date. Neither UPC-A nor DataMatrix can satisfy both sets of requirements. Also, not all pharmaceutical products require two barcodes.</p>
+<br>
+<div class="main-head2s">Use of the UPC-A Barcode</div>
+<br>
+<p>UPC-A is a linear barcode. It holds a maximum of 12 digits, and therefore can only carry a 12-digit GTIN. It cannot carry any secondary information like expiry date or serial number. UPC-A can be used to mark pharmaceutical products to support either retail Point-of-Sale and/or the FDA Barcode Rule. UPC-A is a font from the EAN/UPC family that is often used to label products sold in retail stores.</p>
+<center>
+<img class="image-types" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/pharmaupca.png">
+</center>
+<br>
+<br>
+<div class="main-head2s">Use of the DataMatrix Barcode</div>
+<br>
+<p>Pharmaceutical products are marked with a 2D DataMatrix barcode consisting of the National Drug Code, Serial Number, Lot Number, and Expiry Date. DataMatrix has more capacity and can contain the GTIN plus secondary information. Therefore, it can carry all four required data elements stated above.</p>
+<center>
+<table class="datamatrixs">
+<tr>
+<td>
+<img class="image-types" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/pharmadatamatrix.png">
+</td>
+</tr>
+<tr>
+<th>GTIN 00321012345678</th>
+</tr>
+<tr>
+<th>EXP 311225</th>
+</tr>
+<tr>
+<th>SN 1001234</th>
+</tr>
+<tr>
+<th>LOT 9876543210DCBA</th>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<div class="main-head2s">Step-by-Step Instructions to generate Barcode</div>
+<br>
+<p>To mark UPC-A and DataMatrix barcode on a product, follow the steps below to generate barcodes using <a class="blues" href="https://www.barcodegenerator.us/barcodegenerator/barcode-healthcare.html" target="_blank" title="DRPU Barcode Label Maker">DRPU Barcode Label Maker software</a> and assure that the GTIN encoded in both barcodes is same:</p>
+<center>
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/pharma.gif" class="pharmas">
+</center>
+<ol class=ols>
+<li><span>Assign a 12-digit GTIN to identify the product.</span></li>
+<li><span>Select Linear Barcode in <a class="blues" href="https://www.barcodegenerator.us/barcodegenerator/barcode-healthcare.html" target="_blank" title="DRPU Barcode Label Maker">DRPU Barcode Label Maker software</a> and choose UPCA font then create barcode using 12-digit GTIN.</span></li>
+<li><span>Append the 12-digit GTIN with two leading zeros to create a GTIN-12 in 14-digit format.</span>
+<table class="list-tables">
+<tr>
+<th class="value2s">GTIN-12</th>
+<th>:-</th>
+<th class="values">321012345678</th>
+</tr>
+<tr>
+<th class="value2s">GTIN-12 in 14-digit format</th>
+<th>:-</th>
+<th class="values"><span class="blues"><u>00</u></span>321012345678</th>
+</tr>
+</table>
+</li>
+<li><span>Select 2D Barcode in <a class="blues" href="https://www.barcodegenerator.us/barcodegenerator/barcode-healthcare.html" target="_blank" title="DRPU Barcode Label Maker">DRPU Barcode Label Maker software</a> and choose DataMatrix font then create barcode using GTIN-12 in 14-digit format. Also encode the serial number, lot number, and expiry date in the DataMatrix in addition to the GTIN.</span></li>
+<li><span>Now print the created barcodes.</span></li>
+</ol>
+<br>
+<div class="pharmabgs">
+<div>
+<center>
+<strong class="download-btn-head2s" style="color: #eeeeee !important;">DRPU Barcode Label Maker Software</strong>
+<br><br>
+<a href="https://www.barcodegenerator.us/downloads/healthcare-barcode-software.zip" target="_blank" title="DRPU Barcode Label Maker Software" class="btn-bottoms">DOWNLOAD</a>
+</center>
+</div>
+</div>
+<br>
+<div class="contactuss">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

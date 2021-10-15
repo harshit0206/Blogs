@@ -1,0 +1,485 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009933;
+}
+
+.mainn{
+color: #000;
+padding:0 20px;
+font-size: 18px;
+font-weight: 300;
+letter-spacing: 1.5px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+background-color: #f7f9fb;
+}
+	
+.wristtopn{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/wristtop.png");
+width: calc(100% + 40px);
+height: 382px;
+margin-left: -20px;
+background-size: cover;
+background-position: center;
+}
+
+.float-imgn{
+width: 35%;
+float: right;
+margin: 0 0 0 20px !important;
+}
+
+.float-imgn img{
+width: 100% !important;
+margin: 0 !important;
+}
+	
+.main-headn{
+color: #004080;
+font-size: 1.5em;
+font-weight: bold;
+}
+
+.list-imgn{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+	
+.download-btn-headn{
+color: #004d00;
+font-size: 1.2em;
+}
+	
+.download-btn-head2n{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+
+section.secn {
+width: 100%;
+display: table;
+}
+
+.centern {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
+.triggern {
+position: relative;
+background: #006699;
+display: inline-block;
+width: 200px;
+height: 60px;
+border-radius: 60px;
+color: #fff;
+transition: 0.45s;
+}
+
+.triggern:hover{
+box-shadow: 5px 5px 8px #aaa;
+}
+
+.spann {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+overflow: hidden;
+}
+
+.spann strong {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+line-height: 60px;
+font-size: 1.2em;
+top: 0;
+transition: top 0.45s;
+}
+
+.clickn {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 100%;
+color: #fff;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+}
+
+.triggern::before {
+content: "5.7MB .zip";
+color: #fff;
+font-size: 0.9em;
+width: 150px;
+height: 40px;
+line-height: 40px;
+background: #006699;
+border-radius: 5px;
+top: 90px;
+left: calc(50% - 75px); 
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggern::after {
+content: "";
+width: 0;
+height: 0;
+border: 10px solid transparent;
+border-bottom-color: #006699;
+left: calc(50% - 10px); 
+top: 71px;
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggern:hover::before {
+opacity: 1;
+visibility: visible;
+top: 80px;
+}
+
+.triggern:hover::after {
+opacity: 1;
+visibility: visible;
+top: 61px;
+}
+
+.triggern:hover strong {
+top: -100%;
+}
+
+.triggern:hover .clickn {
+top: 0;
+}
+	
+.wristbgn{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 10px);
+height: 268px;
+margin-left: -20px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+margin-top: 30px;
+}
+	
+.wristbgn::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+a.btn-bottomn{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottomn:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+
+.ul1-imgn{
+width: 40%;
+margin: auto 7% auto auto;
+}
+
+.ul1n{
+width: 40%;
+margin: auto auto auto 7% !important;
+}
+
+.ul2n li{
+margin: 20px 0;
+}
+
+.ul3-imgn{
+width: 40%;
+margin: auto 7% auto auto;
+}
+
+.ul3n{
+width: 40%;
+margin: auto auto auto 7% !important;
+}
+
+.ul3n li{
+margin: 15px 0;
+}
+
+@media screen and (max-width: 1000px){		
+
+.wristtopn{
+height:300px;
+}
+
+.float-imgn{
+width: 45%;
+}
+
+.ul1-imgn{
+width: 50%;
+margin: auto 5% auto auto;
+}
+
+.ul1n{
+width: 40%;
+margin: auto auto auto 5% !important;
+}
+
+.ul3-imgn{
+width: 50%;
+margin: auto 5% auto auto;
+}
+
+.ul3n{
+width: 40%;
+margin: auto auto auto 5% !important;
+}
+}
+
+@media screen and (max-width: 840px){
+
+.mainn{
+font-size: 14px !important;
+padding: 0 10px;
+}
+	
+.wristtopn{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.wristbgn{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.ul1-imgn{
+width: 60%;
+margin: 0;
+}
+
+.ul1-imgn img{
+width: 100% !important;
+}
+
+.ul1n{
+width: 35%;
+margin: auto auto auto auto !important;
+}
+
+.ul3-imgn{
+width: 60%;
+margin: 0;
+}
+
+.ul3-imgn img{
+width: 100% !important;
+}
+
+.ul3n{
+width: 35%;
+margin: auto auto auto auto !important;
+}
+}
+
+@media screen and (max-width: 760px){
+
+.float-imgn{
+float: none;
+width: 100%;
+margin: 0 auto 20px auto !important;
+}
+
+.float-imgn img{
+width: 75% !important;
+}
+}
+
+@media screen and (max-width: 680px){
+
+#container{
+margin: 0 !important;
+}
+
+.mainn{
+margin: 0 -10px;
+}
+		
+.wristtopn{
+height:200px;
+}
+
+.float-imgn img{
+width: 95% !important;
+}
+
+.ul1-imgn{
+width: 90%;
+margin: auto;
+}
+
+.ul1n li{
+margin: 10px;
+}
+
+.ul1n{
+width: 90%;
+margin: auto auto auto 7% !important;
+}
+
+.ul3-imgn{
+width: 90%;
+margin: auto;
+}
+
+.ul3n li{
+margin: 10px;
+}
+
+.ul3n{
+width: 90%;
+margin: auto auto auto 7% !important;
+}
+}
+</style>
+<div class="mainn">
+<center>
+<div class="wristtopn"></div>
+</center>
+<br>
+<p>Nurses, physicians, administrators, and other healthcare professionals worry about patient safety and care on a daily basis. Patient identification wristbands with barcodes have significantly reduced patient identification mistakes. Aside from patient identification and safety, this technology has a lot of additional advantages. It has also resulted in enhanced operational efficiency.</p>
+<div>
+<div class="float-imgn">
+<center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wrist1.png"></center>
+</div>
+<p>The healthcare industry's strategy is fairly clear: deliver the highest level of safety and quality service to patients while minimizipg the risk of mistakes. Modern barcode scanning systems improve patient safety by guaranteeing that the correct patient receives the correct procedure or medicine at all times during the patient journey. A barcode on the hospital patient ID wristband may be readily scanned using a barcode scanner. The band contains vital health information such as the patient's name, past medical problems, allergies, the type of drug to be given, and the dose.</p></div>
+<p>It's simple to keep an error-free record when you use a barcode wristband. Prior to the adoption of the barcode band, this was a time-consuming and often incorrect operation. If the patient does not get a barcode wristband or if the patient's ID wristband does not have appropriate information for identification, carelessness in information inputs might be hazardous.</p>
+<br>
+<center>
+<strong class="download-btn-headn">DRPU Barcode Software for Health Care Industry</strong>
+<br>
+<br>
+<section class="secn">
+<div class="centern">
+<a class="triggern" href="https://www.barcodegenerator.us/downloads/healthcare-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Health Care Industry">
+<span class="spann">
+<strong>Download</strong>
+<div class="clickn">CLICK HERE</div>
+</span>
+</a>
+</div>
+</section>
+</center>
+<br>
+<br>
+<br>
+<br>
+<div class="main-headn">Information on patient ID wristband</div>
+<br>
+<div class="list-imgn">
+<ul class="ul1n">
+<li><span>Name of patient</span></li>
+<li><span>ID number</span></li>
+<li><span>Date of Birth of patient</span></li>
+<li><span>Contact details</span></li>
+<li><span>Photograph</span></li>
+<li><span>Medical history</span></li>
+<li><span>Details of allergies</span></li>
+<li><span>Medication</span></li>
+<li><span>Assigned medical team</span></li>
+<li><span>Details of surgeries</span></li>
+</ul>
+<div class="ul1-imgn"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wrist2.png"></center></div>
+</div>
+<br>
+<br>
+<div class="main-headn">Importance of Patient wristbands</div>
+<ul class="ul2n">
+<li><span>Barcode wristbands containing the patient's personal details are generated at the hospitalization and are updated regularly based on the patient's needs.</span></li>
+<li><span>Doctors and nurses benefit greatly from barcode labels since all of the patient's data, such as medical reports, medications, and test samples, are tagged with barcode labels.</span></li>
+<li><span>Barcodes make sure that the patient undergoing treatment is the correct one and that the therapy is proper.</span></li>
+<li><span>The usage of the patient's ID wristband has reduced the risk of mistakes that might affect patient safety. It has reduced the risk of medical mistakes by assisting doctors and nurses in keeping accurate records of patients' treatment and health indicators.</span></li>
+</ul>
+<br>
+<p><strong>Prior to the introduction of these current patient ID wristbands into the healthcare profession, the industry had a lot of failures in terms of safety and security, including:</strong></p>
+<div class="list-imgn">
+<ul class="ul3n">
+<li><span>Wrong identification of the patient</span></li>
+<li><span>Errors in medication</span></li>
+<li><span>Testing errors</span></li>
+<li><span>Wrong person procedures</span></li>
+<li><span>Even discharge of infants to wrong families</span></li>
+</ul>
+<div class="ul3-imgn"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/wrist3.png"></center></div>
+</div>
+<br>
+<p>The use of barcode wristbands has greatly enhanced the documentation and identification processes in healthcare facilities. Going digital is also intended to provide optimum safety, high-quality patient treatment, and error-free medical records.</p>
+<p>The barcode wristbands have successfully passed all essential objectives such as patient safety, the elimination of human mistakes, simplified procedures, precise drug doses, and so on, after clearing all practical barriers.</p>
+<p>The patient ID wristband technique is ideal for preserving and monitoring patient security in the healthcare business.</p>
+<br>
+<div class="wristbgn">
+<div>
+<center>
+<strong class="download-btn-head2n" style="color: #eeeeee !important;">DRPU Barcode Software for Health Care Industry</strong>
+<br>
+<br>
+<a href="https://www.barcodegenerator.us/downloads/healthcare-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Health Care Industry" class="btn-bottomn">DOWNLOAD</a>
+</center>
+</div>
+</div>
+<br>
+<div class="contactusn">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

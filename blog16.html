@@ -1,0 +1,414 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009973;
+}
+	
+.mainq{
+color: #000;
+padding: 10px 60px;
+font-size: 18px;
+font-weight: 300;
+letter-spacing: 1.5px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+	
+.mainq p{
+text-align: justify;
+}
+	
+.main-headq{
+color: #004d99;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.main-head2q{
+color: #000000;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.advertopq{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/advertop2.jpg");
+width: calc(100% + 100px);
+height: 500px;
+margin-left: -50px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-headq{
+color: #004d00;
+font-size: 1.2em;
+}
+	
+.download-btn-head2q{
+margin: 30px 50px:
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+	
+#wrapq {
+width: 100%;
+margin: 20px auto;
+text-align: center;
+align-items: center;
+justify-content: center;
+transition: .45s;
+}
+
+.buttonq {
+display: inline-flex;
+height: 50px;
+width: 200px;
+border: 5px solid #006699;
+border-radius: 10px;
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 1.2em;
+font-weight: bold;
+letter-spacing: 1.5px;
+align-items: center;
+justify-content: center;
+transition: .45s;
+background: #fff;
+}
+
+#buttonq {
+position: relative;
+cursor: pointer;
+background: #fff;
+overflow: hidden;
+}
+
+#buttonq a {
+position: relative;
+text-decoration: none !important;
+color: #006699;
+z-index: 5;
+transition: .45s;
+}
+
+#translateq {
+transform: skewX(30deg);
+width: 170px;
+height: 50px;
+left: 15px;
+top: 0;
+background: #006699;
+position: absolute;
+z-index: 3;
+opacity: 0;
+transition: .45s;
+}
+
+#clickq{
+top: -100px;
+position: absolute;
+z-index: 4;
+transition: .45s;
+}
+
+#infoq{
+background: #222;
+width: 150px;
+left: 25px;
+position: absolute;
+transition: all .45s linear !important;
+font-size: .7em;
+border-radius: 0 0 10px 10px;
+padding-top: 0;
+padding-bottom: 3px;
+margin: 0 auto;
+z-index: -1;
+opacity : 0;
+text-transform: none;
+top: 0;
+}
+
+#buttonq:hover{
+box-shadow: 5px 5px 8px #aaa;
+transform: scale(1.07);
+overflow: visible;
+transition: .45s;
+}
+
+#buttonq:hover #translateq {
+transition: 3s;
+opacity: 1;
+}
+
+#buttonq:hover #clickq {
+top: 13px;
+transition: .45s;
+}
+
+#buttonq:hover #infoq {
+top: 55px;
+/*transform: translatey(150%);*/
+opacity: 1;
+}
+
+#buttonq:hover a {
+color: transparent;
+transition: .45s;
+}
+	
+.adverbgq{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 70px);
+height: 268px;
+margin-left: -50px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+}
+	
+.adverbgq::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+a.btn-bottomq{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottomq:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.contactusq{
+margin-left: -50px;
+}
+
+.imgq img{
+width: 60%;
+}
+
+.img2q img{
+width: 30%;
+}
+
+.list-imgq{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.ul-imgq{
+width: 40%;
+margin: auto 7% auto auto;
+}
+
+.inner-imaget img{
+width: 100%;
+}
+
+.list-imgq ul{
+width: 40%;
+margin: auto auto auto 7% !important;
+}
+
+.list-imgq ul li{
+margin:20px;
+}
+
+@media screen and (max-width: 1000px){
+
+.mainq{
+padding: 10px 30px;
+}
+
+.advertopq{
+width: calc(100% + 40px);
+height: 400px;
+margin-left: -20px;
+}
+
+.adverbgq{
+width: calc(100% + 10px);
+margin-left: -20px;
+}
+
+.contactusq{
+margin-left: -20px;
+}
+
+.ul-imgq{
+width: 50%;
+margin: auto 5% auto auto;
+}
+
+.list-imgq ul{
+width: 40%;
+margin: auto auto auto 5% !important;
+}
+}
+
+@media screen and (max-width: 840px){
+
+#container{
+margin: 0 !important;
+}
+
+.mainq{
+font-size: 14px !important;
+padding: 10px 0;
+}
+
+.advertopq{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.adverbgq{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.contactusq{
+margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.advertopq{
+height: 300px;
+}
+
+.imgq img{
+width: 90%;
+}
+
+.img2q img{
+width: 50%;
+}
+
+.ul-imgq{
+width: 90%;
+margin: auto;
+}
+
+.list-imgq ul li{
+margin: 10px;
+}
+
+.list-imgq ul{
+width: 90%;
+margin: auto auto auto 7% !important;
+}
+}
+</style>
+<div class="mainq">
+<center>
+<div class="advertopq"></div>
+</center>
+<br><br>
+<center>
+<div class="main-headq">
+<u>Barcodes in advertising industry</u>
+</div>
+</center>
+<br>
+<br>
+<p>The modern technology revolution has resulted in increasing competitiveness in terms of innovation and the development of new advertising tactics. As a result of this, barcodes began to appear in companies. Because of its quick reading, the barcode system is becoming increasingly popular in marketing and new advertising trends for products and services.</p>
+<p>Advertisers are utilizing barcodes to communicate with customers in a more engaging, fascinating, and distinctive manner. Simply by downloading and installing an app that can scan barcodes on a Smartphone, customer may learn a lot more about the goods being promoted. 2D barcodes are increasingly being used in advertising and promotion by businesses.</p>
+<br>
+<center>
+<strong class="download-btn-headq">DRPU Barcode Label Maker - Corporate Edition</strong>
+<br>
+<div id="wrapq">
+<div class="buttonq" id="buttonq">
+<div id="translateq"></div>
+<div id="clickq">CLICK HERE</div>
+<div id="infoq">5.7MB .zip</div>
+<a href="https://www.barcodegenerator.us/downloads/barcode-maker-corporate-demo.zip" target="_blank" title="DRPU Barcode Label Maker - Corporate Edition">Download</a>
+</div>
+</div>
+</center>
+<br><br>
+<p>Barcodes are used in advertisements to increase the chances of success, effectiveness, and efficiency. The advertiser draws a consumer's attention to a 2D barcode presented in an advertisement.</p>
+<div class="img2q"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/advertisementqr.png"></center></div>
+<br>
+<br>
+<div class="main-head2q">QR Codes in advertisements</div>
+<br>
+<p>The QR code connects the physical and online worlds. Advertisers can use QR codes on advertisements, posters, and other printed materials to send people to mobile landing sites with far more information and interactivity than is possible on a printed page.</p>
+<div class="imgq"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/adverqr1.jpg"></center></div>
+<br>
+<br>
+<div class="main-head2q">Working of QR Codes</div>
+<br>
+<p>A QR Code is read by scanning it using a mobile device equipped with a camera and a QR Code reader application. When a QR Code is scanned using the device's camera, it is converted into usable data, such as a text message or a mobile web page.</p>
+<div class="imgq"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/qr2.jpg"></center></div>
+<br>
+<p><strong>Once a QR code is scanned the encoded information can contain:</strong></p>
+<div class="list-imgq">
+<ul>
+<li><span>Web page URL</span></li>
+<li><span>Contact information</span></li>
+<li><span>A message</span></li>
+<li><span>Email address</span></li>
+<li><span>Google Maps Location</span></li>
+<li><span>Social Media profile link</span></li>
+</ul>
+<div class="ul-imgq"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/qr3.jpg"></center></div>
+</div>
+<br>
+<div class="adverbgq">
+<div>
+<center>
+<strong class="download-btn-head2q" style="color: #eeeeee !important;">DRPU Barcode Label Maker - Corporate Edition</strong>
+<br><br>
+<a href="https://www.barcodegenerator.us/downloads/barcode-maker-corporate-demo.zip" target="_blank" title="DRPU Barcode Label Maker - Corporate Edition" class="btn-bottomq">DOWNLOAD</a>
+</center>
+</div>
+</div>
+<br>
+<div class="contactusq">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span>
+<a href="https://www.barcodegenerator.uq" target="_blank" title="Barcode Generatoq" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

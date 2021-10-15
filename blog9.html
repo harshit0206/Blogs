@@ -1,0 +1,464 @@
+<style>
+
+body{
+    word-break: unset !important;
+}
+.mainv{
+color: #000;
+background: #f5f5f5;
+padding: 10px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.main-headv{
+color: #008C76FF;
+font-size: 1.5em;
+font-weight: bold;
+}
+.download-btn-headv{
+color: #b56637;
+font-size: 1.2em;
+}
+.list-headv{
+color: #336699;
+font-size: 1.1em;
+font-weight: bold;
+margin-bottom: 15px;
+padding: 0 10px;
+}
+.benefit-listv ul li{
+color: #b56637;
+margin: 20px 10px;
+}
+.benefit-listv ul li span{
+color: #000;
+}
+#wrapv {
+width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.btn-slidev {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #336699;
+    transition: 1s;
+}
+.btn-slidev:hover {
+    background-color: #336699;
+box-shadow: 5px 5px 8px #aaa;
+transform: scale(1.07);
+}
+.btn-slidev:hover span.circlev{
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color:#336699;
+}
+.btn-slidev:hover span.titlev {
+    left: 40px;
+    opacity: 0;
+}
+.btn-slidev:hover span.title-hoverv {
+    opacity: 1;
+    left: 40px;
+}
+.btn-slidev span.circlev{
+    display: block;
+    background-color:#336699;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    border-radius: 50%;
+}
+.btn-slidev span.titlev,
+  .btn-slidev span.title-hoverv{
+    position: absolute;
+    left: 80px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #336699;
+    transition: 1s;
+}
+.btn-slidev span.title-hoverv {
+    left: 80px;
+    opacity: 0;
+}
+.btn-slidev span.title-hoverv {
+    color: #fff;
+}
+.btn-slidev span.circlev img{
+margin: 9px auto !important;
+}
+.btn-slidev:hover .circlev img{
+filter: invert(36%) sepia(69%) saturate(503%) hue-rotate(168deg) brightness(85%) contrast(86%);
+}
+.list-imgv{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.ul-imgv{
+width: 25%;
+margin: auto auto auto 8%;
+}
+.ul-imgv img:hover{
+transform: scale(1.05);
+box-shadow: 0 0 8px #000;
+transition: 1s;
+}
+.ul-listv{
+padding-right: 15px;
+width: 40%;
+font-size: 1em;
+letter-spacing: 1.5px;
+background: rgba(51, 102, 153, 0.2);
+margin: auto 8% auto auto;
+}
+.postalbgv{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% - 10px);
+height: 268px;
+margin-left: -10px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+position: relative;
+align-content: flex-end;
+padding: 15px;
+}
+a.btn-bottomv{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+a.btn-bottomv:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.download-btn-head2v{
+margin: 30px 50px:
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+.typesv{
+background-color: #e3e3e3;
+margin: 0 -10px;
+padding: 10px;
+}
+.type-headv{
+font-size: 2em;
+}
+.type-namev{
+font-size: 1.3em;
+padding: 0 10px;
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+.type-titlev{
+margin: auto auto auto 10px;
+}
+.type-arrowv{
+margin: auto 10px auto auto;
+padding: 5px 7px 0px 8px;
+background: #f5f5f5;
+border-radius: 50%;
+}
+.type-namev:hover{
+color: #3399ff;
+cursor: pointer;
+}
+.type-innerv{
+display: none;
+margin: 10px;
+padding: 15px;
+background: #f5f5f5;
+animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.parav{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.imagev, .image2dv{
+width: 40%;
+margin: auto 0 auto auto;
+}
+.imagev img{
+width: 80%;
+}
+.image2dv img{
+width: 40%;
+}
+.paragraphv{
+width: 60%;
+margin: auto auto auto 0;
+}
+.img-topv{
+margin: -10px;
+}
+
+@media screen and (max-width: 1000px){
+.ul-listv{
+width: 45%;
+margin: auto 3% auto auto;
+}
+.ul-imgv{
+width: 35%;
+margin: auto auto auto 3%;
+}
+}
+@media screen and (max-width: 880px){
+.ul-imgv{
+width: 40%;
+margin: auto auto auto 2%;
+}
+.ul-listv{
+width: 50%;
+margin: auto 2% auto auto;
+}
+}
+@media screen and (max-width: 680px){
+#container{
+margin: 0 !important;
+padding: 0 !important;
+}
+.mainv{
+font-size: 16px;
+margin: 0 -10px !important;
+}
+.ul-imgv{
+width: 100%;
+margin: auto auto auto auto;
+}
+.ul-listv{
+padding-right: 15px;
+width: auto;
+letter-spacing: 1.5px;
+margin: auto auto auto auto;
+}
+.ul-imgv img{
+width: 60% !important;
+}
+.imagev, .image2dv{
+width: 100%;
+margin: 20px 0 0 0;
+}
+.imagev img{
+width: 60%;
+}
+.image2dv img{
+width: 30%;
+}
+.paragraphv{
+width: 100%;
+margin: 0;
+}
+}
+
+
+
+</style>
+
+
+<div class="mainv">
+
+<br>
+<center><div class="main-headv"><u>Barcodes for Postal service</u></div></center>
+<br>
+
+<div class="img-topv"><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/postaltop.jpg" style="width:100%; height: auto;"></div>
+<br>
+
+<p>Collection, processing, transmission and delivery of mail are the primary function of Post Office. The Postal Service uses tools that reads the barcode to sort and process the mail. The barcode tells where to deliver the mail.</p>
+<p>The Postal Barcode can be a 1D or a 2D barcode. Postal barcodes are primarily used in the postal service and can cover many properties, e.g. Sender and reciever information.</p>
+
+<br>
+<div>
+<center>
+<strong class="download-btn-headv">DRPU Barcode Software for Post Office</strong>
+<br>
+
+<div id="wrapv">
+<a href="https://www.barcodegenerator.us/downloads/bank-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Post Office" class="btn-slidev">
+  <span class="circlev"><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+  <span class="titlev">DOWNLOAD</span>
+  <span class="title-hoverv">Click here</span>
+</a>
+</div>
+
+</center>
+</div>
+<br>
+
+<p>For different aspects of the mail, different kinds of barcodes are used. Also the tray and sack labels have barcodes on them.</p>
+<p>All of these barcodes have different functions in postal service and must ensure certain specifications so that they can be read correctly by the Postal Service. Barcodes are used in the Post Office since 1965 to automate the processes.</p>
+
+<br>
+<div class="benefit-listv">
+<div class="list-headv">Barcodes provide a few unique benefits that are important for Postal service:</div>
+
+<div class="list-imgv">
+
+<div class="ul-imgv">
+<center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbarcode.jpg" style="width: 100%;"></center>
+</div>
+
+<div class="ul-listv"><ul>
+<li><span>Faster processing speed</span></li>
+<li><span>Reduced operational costs</span></li>
+<li><span>Error elimination</span></li>
+<li><span>Enhanced accuracy</span></li>
+<li><span>Improved scheduling of activities</span></li>
+</ul></div>
+
+</div>
+</div>
+<br>
+
+<div class="main-headv">Barcode types for Postal service</div>
+
+<br>
+<p>In the post office, a number of different barcodes are used to identify mail and parcels. Sometimes same item has multiple types of barcodes on it. These barcodes need to be captured quickly, often from a distance.</p>
+
+<br>
+<div class="list-headv">Commonly found barcodes in Postal service:</div>
+
+<div class="typesv">
+
+<br><br>
+
+<div class="type-headv">
+1D Barcodes
+</div>
+<br>
+<hr>
+
+<div class="type-namev" onclick="document.getElementById('glimpse1v').style.display = 'block';"><br><div class="type-titlev">Code 93</div><div class="type-arrowv">˅</div><br><br></div>
+<div class="type-innerv" id="glimpse1v">
+<div class="parav">
+<div class="paragraphv">
+<p>The Code 93 is primarily used in postal services to encode supplementary delivery information. It is used to encode text, numbers and special characters.</p>
+</div>
+<div class="imagev"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalcode93.png"></center></div>
+</div>
+</div>
+<hr>
+
+<div class="type-namev" onclick="document.getElementById('glimpse2v').style.display = 'block';"><br><div class="type-titlev">Postnet</div><div class="type-arrowv">˅</div><br><br></div>
+<div class="type-innerv" id="glimpse2v">
+<div class="parav">
+<div class="paragraphv">
+<p>The Postnet is a 1D Barcode that is used to encode ZIP codes on US mail.</p>
+</div>
+<div class="imagev"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalpostnet.png"></center></div>
+</div>
+</div>
+<hr>
+
+<div class="type-namev" onclick="document.getElementById('glimpse3v').style.display = 'block';"><br><div class="type-titlev">USS-93</div><div class="type-arrowv">˅</div><br><br></div>
+<div class="type-innerv" id="glimpse3v">
+<div class="parav">
+<div class="paragraphv">
+<p>The USS-93 is a 1D Barcode that is primarily used in postal services. It can encode all 128 ASCII characters.</p>
+</div>
+<div class="imagev"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/postaluss93.png"></center></div>
+</div>
+</div>
+
+<br><br>
+
+<div class="type-headv">
+2D Barcode
+</div>
+<br>
+<hr>
+
+<div class="type-namev" onclick="document.getElementById('glimpse4v').style.display = 'block';"><br><div class="type-titlev">DataMatrix</div><div class="type-arrowv">˅</div><br><br></div>
+<div class="type-innerv" id="glimpse4v">
+<div class="parav">
+<div class="paragraphv">
+<p>The DataMatrix is a 2D barcode that can be used for encode text and numbers. This barcode can store up to 2,335 alphanumeric characters. DataMatrix codes have a good error correction and are more secure.</p>
+</div>
+<div class="image2dv"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/datamatrix.png"></center></div>
+</div>
+</div>
+
+<br><br>
+
+</div>
+
+<div class="postalbgv">
+<div>
+<center>
+
+<strong class="download-btn-head2v" style="color: #fff;">DRPU Barcode Software for Post Office</strong>
+<br><br>
+
+<!--<div id="wrapv">
+<a href="https://www.barcodegenerator.us/downloads/bank-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Post Office" class="btn-slidev">
+  <span class="circlev"><img  src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+  <span class="titlev">DOWNLOAD</span>
+  <span class="title-hoverv">Click here</span>
+</a>
+</div>-->
+
+<a href="https://www.barcodegenerator.us/downloads/bank-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Post Office" class="btn-bottomv">DOWNLOAD</a>
+</center>
+</div>
+
+</div>
+
+<br>
+<div class="contactusw">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span><a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a></span>
+</div>
+</div>
+<br>
+
+</div>

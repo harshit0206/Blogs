@@ -1,0 +1,506 @@
+<style>
+body{
+    word-break: unset !important;
+}
+
+.mainu{
+color: #000;
+/*background: #f5f5f5;*/
+padding: 10px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.main-headu{
+color: #008C76FF;
+font-size: 1.5em;
+font-weight: bold;
+}
+
+p{
+text-align: justify;
+}
+
+.download-btn-headu{
+color: #b56637;
+font-size: 1.2em;
+}
+
+#wrapu {
+width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn-slideu {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #336699;
+    margin: 10px;
+    transition: 1s;
+}
+
+.btn-slideu:hover {
+    background-color: #336699;
+box-shadow: 5px 5px 8px #aaa;
+transform: scale(1.07);
+}
+
+.btn-slideu:hover span.circleu{
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color:#336699;
+}
+
+.btn-slideu:hover span.titleu {
+    left: 40px;
+    opacity: 0;
+}
+
+.btn-slideu:hover span.title-hoveru {
+    opacity: 1;
+    left: 40px;
+}
+
+.btn-slideu span.circleu{
+    display: block;
+    background-color:#336699;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    border-radius: 50%;
+}
+
+.btn-slideu span.titleu,
+  .btn-slideu span.title-hoveru{
+    position: absolute;
+    left: 80px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #336699;
+    transition: 1s;
+}
+
+.btn-slideu span.title-hoveru {
+    left: 80px;
+    opacity: 0;
+}
+
+.btn-slideu span.title-hoveru {
+    color: #fff;
+}
+
+.btn-slideu span.circleu img{
+margin: 9px auto !important;
+}
+
+.btn-slideu:hover .circleu img{
+filter: invert(36%) sepia(69%) saturate(503%) hue-rotate(168deg) brightness(85%) contrast(86%);
+}
+
+.usesu ul li{
+color: #b56637;
+margin: 0 10px;
+}
+
+.usesu ul li span{
+color: #000;
+}
+
+.list-headu{
+color: #336699;
+font-size: 1.1em;
+font-weight: bold;
+margin-bottom: 15px;
+padding: 0 10px;
+}
+
+.benefit-listu ul li{
+color: #b56637;
+margin: 0 10px;
+}
+
+.benefit-listu ul li span{
+color: #000;
+}
+
+.list-imgu{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.ul-imgu{
+width: 30%;
+margin: auto auto auto 5%;
+}
+
+.ul-imgu img:hover{
+transform: scale(1.05);
+box-shadow: 0 0 8px #000;
+transition: .5s;
+}
+
+.ul-listu{
+padding-right: 15px;
+width: 50%;
+font-size: 1em;
+letter-spacing: 1px;
+background: rgba(51, 102, 153, 0.2);
+margin: auto 5% auto auto;
+}
+
+.inventorybgu{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 20px);
+height: 268px;
+margin-left: -10px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+}
+
+a.btn-bottomu{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+		width: 137px;
+}
+
+a.btn-bottomu:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+
+.typesu{
+background-color: #e3e3e3;
+margin: 0 -10px;
+padding: 10px;
+}
+
+.type-headu{
+font-size: 2em;
+}
+
+.type-nameu{
+font-size: 1.3em;
+padding: 0 10px;
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.type-titleu{
+margin: auto auto auto 10px;
+}
+
+.type-arrowu{
+margin: auto 10px auto auto;
+padding: 5px 7px 0px 8px;
+background: #f5f5f5;
+border-radius: 50%;
+}
+
+.type-nameu:hover{
+color: #3399ff;
+cursor: pointer;
+}
+
+.type-inneru{
+display: none;
+margin: 10px;
+padding: 15px;
+background: #f5f5f5;
+animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.parau{
+display: flex;
+flex-wrap: wrap;
+		align-items: center;
+}
+
+.imageu, .image2du{
+width: 40%;
+margin: auto 0 auto auto;
+}
+
+.imageu img{
+width: 80%;
+}
+
+.image2du img{
+width: 40%;
+}
+
+.paragraphu{
+width: 60%;
+margin: auto auto auto 0;
+}
+
+.img-top1u, .img-top2u{
+margin: -10px;
+}
+
+.img-top2u{
+display: none;
+}
+
+@media screen and (max-width: 1000px){
+
+.ul-imgu{
+width: 35%;
+margin: auto auto auto 2%;
+}
+
+.ul-listu{
+width: 55%;
+margin: auto 2% auto auto;
+}
+}
+
+@media screen and (max-width: 880px){
+
+.ul-imgu{
+width: 40%;
+}
+
+.ul-listu{
+width: 50%;
+}
+
+.img-top1u{
+display: none;
+}
+
+.img-top2u{
+display: block;
+}
+}
+
+@media screen and (max-width: 680px){
+
+#container{
+margin: 0 !important;
+padding: 0 !important;
+}
+
+.mainu{
+font-size: 16px;
+margin: 0 -10px !important;
+}
+
+.ul-imgu{
+width: 100%;
+margin: auto auto auto auto;
+}
+
+.ul-listu{
+padding-right: 15px;
+width: auto;
+letter-spacing: 1.5px;
+margin: auto auto auto auto;
+}
+
+.ul-imgu img{
+width: 60% !important;
+}
+		
+		.imageu, .image2du{
+			width: 100%;
+			margin: 20px 0 0 0;
+		}
+		
+		.imageu img{
+			width: 60%;
+		}
+		
+		.image2du img{
+			width: 30%;
+		}
+		
+		.paragraphu{
+			width: 100%;
+			margin: 0;
+		}
+}
+</style>
+<div class="mainu">
+<center><div class="main-headu"><u>Barcodes for Inventory Control</u></div></center>
+<br>
+<div class="img-top1u"><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/inventorytop1.jpeg" style="width:100%; height: auto;"></div>
+<div class="img-top2u"><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/inventorytop2.jpeg" style="width:100%; height: auto;"></div>
+<br>
+<p>For many businesses Inventory Management is important. Using a barcode inventory system is more efficient than tracking inventory by hand or with spreadsheets. Barcoding saves time, money, and unnecessary work when implemented in an inventory system.</p>
+<p>Barcode is a method of representing data in a graphical form which can be read by machines to track inventory and identify items. For inventory management, Barcode systems are great tools. They can ensure a more accurate count of items, speed up the process of both shipping and receiving goods, and they reduce costs.</p>
+<br>
+<div>
+<center>
+<strong class="download-btn-headu">DRPU Barcode Software for Inventory Control and Retail Business</strong>
+<br>
+<div id="wrapu">
+<a href="https://www.barcodegenerator.us/downloads/retail-business-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Inventory Control and Retail Business" class="btn-slideu">
+  <span class="circleu"><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+  <span class="titleu">DOWNLOAD</span>
+  <span class="title-hoveru">Click here</span>
+</a>
+</div>
+</center>
+</div>
+<br>
+<p>With immediate updates to a database, Businesses can track their inventory across the globe, so anyone in the company can know what’s the stock. When an item is placed in the location, a worker can scan both the item and the location barcodes, and the system will store the data.</p>
+<p>
+With barcodes, data of all goods can be instantly transferred to a computer. This makes the processes much faster. Computers can do these things easily, instead of manually entering data and figuring out the price.</p>
+<div class="usesu">
+<div class="uses-headu">Barcodes scanning can be used in many ways for inventory control, including:</div>
+<ul class="uses-ulu">
+<li><span>Calculating inventory counts</span></li>
+<li><span>Receiving inventory</span></li>
+<li><span>Order picking</span></li>
+<li><span>Warehouse transfers</span></li>
+</ul>
+</div>
+<br>
+<div class="benefit-listu">
+<div class="list-headu">Barcode systems also help in the following:</div>
+<div class="list-imgu">
+<div class="ul-imgu">
+<center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/inventorypic.jpg" style="width: 100%;"></center>
+</div>
+<div class="ul-listu">
+<ul>
+<li><span>Increased efficiency and productivity by reduction of manual entry</span></li>
+<li><span>Low-cost implementation</span></li>
+<li><span>Real-time reporting and more accurate data analysis</span></li>
+<li><span>Streamlined reordering</span></li>
+<li><span>Improved loss security</span></li>
+<li><span>Process can be made more adaptable</span></li>
+<li><span>Less reliance on paper</span></li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<div class="list-headu">Commonly found barcodes in Inventory control systems:</div>
+<div class="typesu">
+<br><br>
+<div class="type-headu">
+1D Barcodes
+</div>
+<br>
+<hr>
+<div class="type-nameu" onclick="document.getElementById('glimpse1u').style.display = 'block';"><br><div class="type-titleu">Code 128</div><div class="type-arrowu">˅</div><br><br></div>
+<div class="type-inneru" id="glimpse1u">
+<div class="parau">
+<div class="paragraphu">
+<p>The Code 128 is widely used in shipping and packaging industries as a product identification code. It can encode all 128 ASCII characters.</p>
+</div>
+<div class="imageu"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/inventcode128.png"></center></div>
+</div>
+</div>
+<hr>
+<div class="type-nameu" onclick="document.getElementById('glimpse2u').style.display = 'block';"><br><div class="type-titleu">EAN-13 / EAN-8</div><div class="type-arrowu">˅</div><br><br></div>
+<div class="type-inneru" id="glimpse2u">
+<div class="parau">
+<div class="paragraphu">
+<p>The EAN-13 is mainly used in Retail product marking world-wide while EAN-8 is used in Retail product marking world-wide with limited label space. Both can encode 13 and 8 digit numbers respectively.</p>
+</div>
+<div class="imageu"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/inventean.png"></center></div>
+</div>
+</div>
+<hr>
+<div class="type-nameu" onclick="document.getElementById('glimpse3u').style.display = 'block';"><br><div class="type-titleu">UPC-A / UPC-E</div><div class="type-arrowu">˅</div><br><br></div>
+<div class="type-inneru" id="glimpse3u">
+<div class="parau">
+<div class="paragraphu">
+<p>These barcodes are used in Retail industry in the U.S. and Canada. UPC-A uses 12 digits for information encoding while UPC-E is a shorter version of UPC-A and contains 7 digits.</p>
+</div>
+<div class="imageu"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/inventupc.png"></center></div>
+</div>
+</div>
+<br><br>
+<div class="type-headu">
+2D Barcodes
+</div>
+<br>
+<hr>
+<div class="type-nameu" onclick="document.getElementById('glimpse4u').style.display = 'block';"><br><div class="type-titleu">DataMatrix</div><div class="type-arrowu">˅</div><br><br></div>
+<div class="type-inneru" id="glimpse4u">
+<div class="parau">
+<div class="paragraphu">
+<p>The DataMatrix is a 2D barcode that can be used for encode text and numbers. This barcode can store up to 2,335 alphanumeric characters. DataMatrix codes have a good error correction and are more secure.</p>
+</div>
+<div class="image2du"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/datamatrix.png"></center></div>
+</div>
+</div>
+<hr>
+<div class="type-nameu" onclick="document.getElementById('glimpse5u').style.display = 'block';"><br><div class="type-titleu">QR Code</div><div class="type-arrowu">˅</div><br><br></div>
+<div class="type-inneru" id="glimpse5u">
+<div class="parau">
+<div class="paragraphu">
+<p>QR Code uses a small area of square modules with a unique perimeter pattern. The data encoded in a QR Code may include letters, text, numbers, double-byte characters, URLs and files.</p>
+</div>
+<div class="image2du"><center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/inventqr.png"></center></div>
+</div>
+</div>
+<br><br>
+</div>
+<br><br>
+<p>Without a barcode system in inventory control, the number of tasks become a burden on inventory managers. They have to manually write down important information about goods. In businesses inventory has to be managed. Whether it is items for sale, raw materials, finished products, supplies, etc.,  barcode inventory management comes with many benefits.</p>
+<br>
+<div class="inventorybgu">
+<div>
+<center><strong class="download-btn-headu" style="color: #eee;">DRPU Barcode Software for Inventory Control and Retail Business</strong>
+<br><br>
+<a href="https://www.barcodegenerator.us/downloads/retail-business-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Inventory Control and Retail Business" class="btn-bottomu">DOWNLOAD</a></center>
+</div>
+</div>
+<br>
+<div class="contactusu">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span><a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a></span>
+</div>
+</div>
+<br>
+</div>

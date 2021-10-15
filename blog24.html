@@ -1,0 +1,504 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selectiom {
+color: #fff;
+background: #009973;
+}
+	
+.mainm{
+color: #000;
+padding: 10px 60px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+	
+.mainm p{
+text-align: justify;
+}
+	
+.main-headm{
+color: #004d99;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.librarytopm{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/shiptop.jpg");
+width: calc(100% + 100px);
+height: 500px;
+margin-left: -50px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-headm{
+color: #004d00;
+font-size: 1.2em;
+}
+
+section.secm {
+width: 100%;
+display: table;
+}
+
+.centerm {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
+.triggerm {
+position: relative;
+background: #006699;
+display: inline-block;
+width: 200px;
+height: 60px;
+border-radius: 60px;
+color: #fff;
+transition: 0.45s;
+}
+
+.triggerm:hover{
+box-shadow: 5px 5px 8px #aaa;
+}
+
+.spanm {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+overflow: hidden;
+}
+
+.spanm strong {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+line-height: 60px;
+font-size: 1.2em;
+top: 0;
+transition: top 0.45s;
+}
+
+.clickm {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 100%;
+color: #fff;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+}
+
+.triggerm::before {
+content: "5.7MB .zip";
+color: #fff;
+font-size: 0.9em;
+width: 150px;
+height: 40px;
+line-height: 40px;
+background: #222;
+border-radius: 5px;
+top: 90px;
+left: calc(50% - 75px); 
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggerm::after {
+content: "";
+width: 0;
+height: 0;
+border: 10px solid transparent;
+border-bottom-color: #222;
+left: calc(50% - 10px); 
+top: 71px;
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggerm:hover::before {
+opacity: 1;
+visibility: visible;
+top: 80px;
+}
+
+.triggerm:hover::after {
+opacity: 1;
+visibility: visible;
+top: 61px;
+}
+
+.triggerm:hover strong {
+top: -100%;
+}
+
+.triggerm:hover .clickm {
+top: 0;
+}
+
+.list-imgm{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+	
+ul.ul1m li{
+color: #b56637;
+font-size: 1.1em;
+margin-bottom: 20px;
+}
+
+.stepm{
+color: #5085a5;
+font-weight: bold;
+}
+
+.inner-imagem{
+width: 40%;
+margin: auto 0 auto auto;
+}
+
+.inner-imagem img{
+width: 90%;
+margin: auto auto auto auto !important;
+box-shadow: 5px 5px 5px #aaa;
+}
+
+.inner-listm{
+/*width: 60%;*/
+width: 100%;
+margin: 10px auto auto 0;
+}
+	
+.inner-listm p{
+letter-spacing: 1.5px;
+color: #000;
+font-size: 1em;
+}
+
+.ul2m{
+width: 55%;
+margin: auto 5% auto 0;
+}
+
+.ul2m ul li{
+margin-bottom: 20px;
+}
+
+.ul3m{
+width: 40%;
+margin: auto 0 auto 0;
+background: #e6e6e6;
+}
+
+.ul3-headm{
+color: #1a73e8;
+font-size: 1.2em;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.ul3m ul li{
+color: #1a73e8;
+margin-right: 7%;
+}
+
+.ul3m ul li span{
+color: #666666;
+}
+	
+.librarybgm{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 70px);
+height: 268px;
+margin-left: -50px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+}
+	
+.librarybgm::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+.download-btn-head2m{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+	
+a.btn-bottomm{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottomm:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.contactusm{
+margin-left: -50px;
+}
+
+@media screen and (max-width: 1000px){
+
+.mainm{
+padding: 10px 30px;
+}
+
+.librarytopm{
+width: calc(100% + 40px);
+height: 400px;
+margin-left: -20px;
+}
+
+.librarybgm{
+width: calc(100% + 10px);
+margin-left: -20px;
+}
+
+.contactusm{
+margin-left: -20px;
+}
+
+.inner-imagem{
+width: 50%;
+}
+		
+/*.inner-listm{
+width: 50%;
+}*/
+
+.ul2m{
+width: 50%;
+margin: auto 5% auto 0;
+}
+
+.ul3m{
+width: 45%;
+}
+}
+
+@media screen and (max-width: 840px){
+
+#container{
+margin: 0 !important;
+}
+
+.mainm{
+font-size: 14px !important;
+padding: 10px 0;
+}
+
+.librarytopm{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.librarybgm{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.contactusm{
+margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.librarytopm{
+height: 300px;
+}
+		
+.inner-imagem{
+width: 100%;
+margin: 0 0 0 -20px;
+}
+		
+.inner-listm{
+width: 100%;
+}
+
+.ul2m{
+width: 100%;
+margin: auto 0 20px 0;
+}
+
+.ul3m{
+width: calc(100% - 20px);
+margin: auto;
+}
+}
+</style>
+<div class="mainm">
+<center>
+<div class="librarytopm"></div>
+</center>
+<br>
+<p>Because of its speed, efficiency, and trustworthiness, barcode technology is widely used in library systems. The automation of library services, particularly circulation, relies heavily on barcode technology.</p>
+<p>Barcode technology is a simple and low-cost technique of encoding textual information that can be read easily by low-cost scanners. Data may also be gathered quickly and accurately using bar coding. A bar code is made up of a succession of contiguous parallel bars and spaces. Small strings of data are encoded into a printed symbol using predetermined bar and space sequences. The intensity of light reflected back by the white spaces is measured by a bar code reader as it scans a light source over the bar code. A photodiode detects the reflected light pattern and generates an electrical signal that matches the printed bar code pattern perfectly. Using low-cost electrical circuits, this signal is decoded back to the original data.</p>
+<br>
+<center>
+<strong class="download-btn-headm">DRPU Barcode software for Publishers and Library</strong>
+<br>
+<br>
+<section class="secm">
+<div class="centerm">
+<a class="triggerm" href="https://www.barcodegenerator.us/downloads/publishers-library-barcode-software.zip" target="_blank" title="DRPU Barcode software for Publishers and Library">
+<span class="spanm">
+<strong>Download</strong>
+<div class="clickm">CLICK HERE</div>
+</span>
+</a>
+</div>
+</section>
+</center>
+<br>
+<br>
+<br>
+<div class="main-headm">APPLICATION OF BARCODES IN LIBRARY SYSTEMS</div>
+<ul class="ul1m">
+<li>
+<strong class="stepm">Charging and Discharging of Books</strong>
+<div class="list-imgm">
+<div class="inner-listm">
+<p>The charging and discharging of books is a time-consuming operation owing to the standard distribution system, which requires stamping of due dates and other data input labor. When a user goes to the circulation counter in a barcoded environment, the staff scans his or her identity card and activates the borrowing status.</p>
+</div>
+<!--<div class="inner-imagem">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/ship1h.png">
+</div>-->
+</div>
+</li>
+<li>
+<strong class="stepm">Stock Verification & Cross-checking</strong>
+<div class="list-imgm">
+<div class="inner-listm">
+<p>In libraries, stock verification and cross checking is a difficult and time-consuming task, and users are not permitted to utilize the library facilities during this period. Barcode technologies are employed extremely successfully here, and the process is faster and error-free. During this operation, all of the library's papers are scanned, and data is collected on a hand-held terminal. The data is downloaded into the host machine when it is nearly full.</p>
+</div>
+</div>
+</li>
+<li>
+<strong class="stepm">Identification of membership</strong>
+<div class="list-imgm">
+<div class="inner-listm">
+<p>Access to libraries is restricted to members only. As a result, a gateman or security guard is assigned to the library's entrance gate to check the identity cards of all visitors. This verification becomes much easier if the members are given barcoded identity cards.</p>
+</div>
+</div>
+</li>
+<li>
+<strong class="stepm">Checking System</strong>
+<div class="list-imgm">
+<div class="inner-listm">
+<p>When a borrower departs from the library, the user's document's access number will be scanned at the gate once again. If a document has been issued, the computer will authorize the exit. However, if someone is holding a document that has not been issued, the computer will immediately send an alarm and a notice.</p>
+</div>
+</div>
+</li>
+<li>
+<strong class="stepm">Issue of No Dues Certificate</strong>
+<div class="list-imgm">
+<div class="inner-listm">
+<p>In a manual system, this procedure takes a long time and is prone to errors. The member surrenders his or her identity card to an automated system that uses barcode technology, and the counter personnel scan it. The automated program will look through the database for any documents that have been issued in his or her name.</p>
+</div>
+</div>
+</li>
+</ul>
+<br>
+<div class="main-headm">ADVANTAGES OF USING BARODE TECHNOLOGY</div>
+<br>
+<div class="list-imgm">
+<div class="ul2m">
+<p>The use of barcode technology in libraries is being done in order to automate the circulation system's data input procedure. When compared to manual data entry, barcode technology enhances efficiency and reduces human mistakes. It offers the following benefits:</p>
+<ul>
+<li><span>Improved  data input accuracy </span></li>
+<li><span>Increased operation time </span></li>
+<li><span>Improved inventory system </span></li>
+<li><span>Improved staff efficiency and effectiveness of the services </span></li>
+<li><span>Increased user satisfaction </span></li>
+<li><span>Reliable statistical data for managerial control </span></li>
+<li><span>Saves borrower time </span></li>
+<li><span>Accurate data entry and collection </span></li>
+<li><span>Real-time data gathering </span></li>
+<li><span>Labour savings by preventing manual filing system </span></li>
+</ul>
+</div>
+<div class="ul3m">
+<br>
+<center><div class="ul3-headm">Consider these difficulties encountered in the manual method</div></center>
+<ul>
+<li><span>It is difficult to determine the status of a specific book</span></li>
+<li><span>It is time-consuming to determine to whom a particular book has been issued</span></li>
+<li><span>It is difficult to provide a clearance certificate to a specific reader because the counter assistant will have to confirm the borrower's log and other files to determine whether a book is awaiting against the borrower or not</span></li>
+<li><span>Difficult to determine the status of a book</span></li>
+<li><span>Providing book reservations is a time-consuming task</span></li>
+<li><span>The stamping of the due/return date, as well as the labour of creating additional entries, takes time while charging and discharging books</span></li>
+</ul>
+</div>
+</div>
+<br>
+<p>Barcode technology is, without a question, a benefit to the library and information profession. Its implementation in a specific library, on the other hand, should be carefully thought out and prepared. The financial element, as well as other factors such as comfort and convenience of usage, should be taken into account. The scanners' dependability, service, and maintenance should all be carefully assessed.</p>
+<p>Barcode technology is the most precise and cost-effective method of identifying items/documents and entering data into computers. Its use boosts productivity, reduces human error, and enhances the pace of operations and services.</p>
+<br>
+<div class="librarybgm">
+<div>
+<center>
+<strong class="download-btn-head2m" style="color: #eeeeee !important;">DRPU Barcode software for Publishers and Library</strong>
+<br>
+<br>
+<a href="https://www.barcodegenerator.us/downloads/publishers-library-barcode-software.zip" target="_blank" title="DRPU Barcode software for Publishers and Library" class="btn-bottomm">DOWNLOAD</a>
+</center>
+</div>
+</div>
+<br>
+<div class="contactusm">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>
