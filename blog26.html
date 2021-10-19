@@ -1,0 +1,568 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009933;
+}
+
+.mainl{
+color: #000;
+padding:0 20px;
+font-size: 18px;
+font-weight: 300;
+letter-spacing: 1.5px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+background-color: #f7f9fb;
+}
+	
+.main-headl{
+color: #004d99;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.main-head2l{
+color: #000000;
+font-size: 1.3em;
+font-weight: bold;
+}
+	
+.barcodetopl{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/barcodetopl.jpeg");
+width: calc(100% + 40px);
+height: 382px;
+margin-left: -20px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-headl{
+color: #004d00;
+font-size: 1.2em;
+}
+
+section.secl {
+width: 100%;
+display: table;
+}
+
+.centerl {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
+.triggerl {
+position: relative;
+background: #006699;
+display: inline-block;
+width: 200px;
+height: 60px;
+border-radius: 60px;
+color: #fff;
+transition: 0.45s;
+}
+
+.triggerl:hover{
+box-shadow: 5px 5px 8px #aaa;
+}
+
+.spanl {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+overflow: hidden;
+}
+
+.spanl strong {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+line-height: 60px;
+font-size: 1.2em;
+top: 0;
+transition: top 0.45s;
+}
+
+.clickl {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 100%;
+color: #fff;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+}
+
+.triggerl::before {
+content: "4.9MB .zip";
+color: #fff;
+font-size: 0.9em;
+width: 150px;
+height: 40px;
+line-height: 40px;
+background: #222;
+border-radius: 5px;
+top: 90px;
+left: calc(50% - 75px); 
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggerl::after {
+content: "";
+width: 0;
+height: 0;
+border: 10px solid transparent;
+border-bottom-color: #222;
+left: calc(50% - 10px); 
+top: 71px;
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggerl:hover::before {
+opacity: 1;
+visibility: visible;
+top: 80px;
+}
+
+.triggerl:hover::after {
+opacity: 1;
+visibility: visible;
+top: 61px;
+}
+
+.triggerl:hover strong {
+top: -100%;
+}
+
+.triggerl:hover .clickl {
+top: 0;
+}
+
+.list-imgl{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+	
+ol.ol1l li{
+color: #b56637;
+font-size: 1.1em;
+margin-bottom: 20px;
+}
+
+.stepl{
+color: #5085a5;
+font-weight: bold;
+}
+
+.inner-imagel{
+width: 40%;
+margin: auto 0 auto auto;
+}
+
+.inner-imagel img{
+width: 90%;
+margin: auto auto auto auto !important;
+box-shadow: 5px 5px 5px #aaa;
+}
+
+.inner-listl{
+width: 60%;
+margin: auto auto auto 0;
+}
+	
+.inner-listl p{
+letter-spacing: 1.5px;
+color: #000;
+font-size: 1em;
+}
+	
+ol.ol2l li{
+color: #b56637;
+font-size: 1.1em;
+margin-bottom: 20px;
+}
+
+ol.ol2l p{
+color: #000;
+font-size: .9em;
+}
+	
+.barcodebgl{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 10px);
+height: 268px;
+margin-left: -20px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+margin-top: 30px;
+}
+	
+.barcodebgl::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+.download-btn-head2l{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+	
+a.btn-bottoml{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottoml:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+
+.image-typel{
+width: 40%;
+}
+
+.image-typel img{
+width: 90%;
+margin: auto auto auto auto !important;
+}
+
+@media screen and (max-width: 1000px){		
+
+.barcodetopl{
+height:300px;
+}
+
+.inner-imagel{
+width: 50%;
+}
+		
+.inner-listl{
+width: 50%;
+}
+	
+.inner-listl p{
+letter-spacing: 1px;
+font-size: .9em;
+}
+
+.image-typel{
+width: 50%;
+}
+}
+
+@media screen and (max-width: 840px){
+
+.mainl{
+font-size: 14px !important;
+padding: 0 10px;
+}
+	
+.barcodetopl{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.barcodebgl{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.image-typel{
+width: 60%;
+}
+}
+
+@media screen and (max-width: 680px){
+
+#container{
+margin: 0 !important;
+}
+
+.mainl{
+margin: 0 -10px;
+}
+		
+.barcodetopl{
+height:200px;
+}
+		
+.inner-imagel{
+width: 100%;
+margin: 0 0 0 -20px;
+}
+		
+.inner-listl{
+width: 100%;
+}
+
+.image-typel{
+width: 100%;
+margin: 0 0 0 -20px;
+}
+}
+</style>
+<div class="mainl">
+<center>
+<div class="barcodetopl"></div>
+</center>
+<br>
+<p>A barcode is a machine-readable code that is printed on a product and consists of digits and a pattern of parallel lines of various lengths. Barcode systems allow businesses and organizations to track goods, pricing, and stock levels, resulting in significant productivity and efficiency gains. Barcode shortens the time required to capture such data in half and removed the possibility of human data input errors. Now barcodes can be read by mobile phones & other devices, and they come in a wide range of shapes and sizes, as well as patterns.</p>
+<br>
+<p><strong>There are many different types of barcodes, each with its own set of advantages and disadvantages.</strong></p>
+<div class="main-head2l">One-Dimensional (1D) Barcode type</div>
+<br>
+<p>One-dimensional (or 1D) barcodes encode data by changing the lengths and spacing of parallel lines in a predictable manner. 1D barcodes are widely utilized in business operations to save time and streamline inventory procedures.</p>
+<p>E.g. UPC, EAN, Code 39, Codabar, Interleaved 2 of 5, and many more.</p>
+<center>
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016140023d94.png">
+</center>
+<br>
+<br>
+<div class="main-head2l">Two-Dimensional (2D) Barcode Type</div>
+<br>
+<p>Two-dimensional (or 2D) barcodes use two-dimensional symbols and shapes to consistently express data. They can hold more data per square inch as compared to 1D barcodes. 2D barcodes also have error-protection formulae, which is a big plus. 2D barcodes are especially suited to more intensive, fast-paced scanning applications.</p>
+<p>E.g. QR Code, DataMatrix, PDF 417, Aztec, and many more.</p>
+<center>
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016140025c9b.png">
+</center>
+<br>
+<br>
+<p><strong>Following are the tools required to create barcodes for startup retail business.</strong></p>
+<div class="main-headl">Barcode Software</div>
+<br>
+<p>One easy way to incorporate barcodes into your business is to use a complete barcode system, like the DRPU Barcode Label Maker Software.</p>
+<center>
+<strong class="download-btn-headl">DRPU Barcode Label Maker Software</strong>
+<br>
+<br>
+<section class="secl">
+<div class="centerl">
+<a class="triggerl" href="https://www.barcodegenerator.us/downloads/barcode-maker-demo.zip" target="_blank" title="DRPU Barcode Label Maker Software">
+<span class="spanl">
+<strong>Download</strong>
+<div class="clickl">CLICK HERE</div>
+</span>
+</a>
+</div>
+</section>
+</center>
+<br>
+<br>
+<br>
+<p>Software generates Linear and 2D barcode labels in simplified way and allows user to produce Barcode labels with text, line, pictures and other designing objects with Batch Processing Series feature to generate the multiple copies of labels. This software is ready to use in corporate, publishing, healthcare, warehousing, post office, and many more industries to generate barcode labels.</p>
+<br>
+<div class="main-headl">Barcode Hardware</div>
+<br>
+<div class="main-head2l">Barcode Label Printers</div>
+<br>
+<p>There are four types of barcode printers: desktop, industrial, mobile, and specialized. The optimum selection for you will be determined by your average print quantity, mobility needs, and printing type.</p>
+<ol class="ol2l">
+<li>
+<strong class="stepl">Desktop</strong>
+<div>
+<p>Desktop barcode printers can produce 100 to 500 labels each day, which makes them perfect for workplaces and retail businesses.</p>
+<center>
+<div class="image-typel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/desktopprinter.jpg">
+</div>
+</center>
+</div>
+</li>
+<li>
+<strong class="stepl">Industrial</strong>
+<div>
+<p>Industrial printers, which have a higher capacity than desktop printers, may print about 1,500, 3,000, or even 5,000 labels each day, depending on the type. Larger labels, up to 8 inches wide, may be printed on some printers.</p>
+<center>
+<div class="image-typel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/industrialprinter.jpg">
+</div>
+</center>
+</div>
+</li>
+<li>
+<strong class="stepl">Mobile</strong>
+<div>
+<p>Mobile printers produce similar quantities as desktop printers but do not require an interconnection to a computer; nevertheless, print widths are often limited to 4 inches. Mobile printers are very handy for printing labels while on the go.</p>
+<center>
+<div class="image-typel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/mobileprinter.jpg">
+</div>
+</center>
+</div>
+</li>
+<li>
+<strong class="stepl">Specialized</strong>
+<div>
+<p>Although ordinary printers can typically handle specific labels like tickets, wristbands, and cards, a specialized barcode printer is a more cost-effective and efficient option if you just require one sort of label.</p>
+<center>
+<div class="image-typel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/specializedprinter.jpg">
+</div>
+</center>
+</div>
+</li>
+</ol>
+<br>
+<p>On the basis of functioning, there are mainly four types of printers available to print barcodes: <strong>Dot Matrix, Inkjet, Laser</strong> and <strong>Thermal printers.</strong></p>
+<ol class="ol2l">
+<li>
+<strong class="stepl">Dot Matrix</strong>
+<div>
+<p>A Dot Matrix is a grid of dots. A printer prints by slapping an ink-soaked fabric ribbon on the paper directly. The printer head travels up and down or back and forth on the paper in a similar way as a typewriter's print mechanism. The prints may be made in a variety of fonts and with any images, such as dots.</p>
+<center>
+<div class="image-typel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/dotmatrixprinter.jpg">
+</div>
+</center>
+</div>
+</li>
+<li>
+<strong class="stepl">Inkjet</strong>
+<div>
+<p>Inkjet printers produce text, graphics, and pictures on a variety of papers using ink. Although many commercial printing businesses utilize inkjet printers to generate high-quality brochures, flyers, and other items, inkjet printers are most prevalent in homes and small workplaces.</p>
+<center>
+<div class="image-typel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/inkjetprinter.jpeg">
+</div>
+</center>
+</div>
+</li>
+<li>
+<strong class="stepl">Laser</strong>
+<div>
+<p>On paper/adhesive labels, a laser printer can print high-quality text and images. The density of the barcodes is great, and an infrared scanner can readily read them. Laser-printed barcode labels are not appropriate for use in industrial settings. Laser printers are unable to generate barcode labels that are resistant to water and chemicals.</p>
+<center>
+<div class="image-typel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/laserprinter.jpg">
+</div>
+</center>
+</div>
+</li>
+<li>
+<strong class="stepl">Thermal</strong>
+<div>
+<p>Thermal printers transfer pigments using small heating sources. Labels, safety signs, navigation markers, barcodes, shipping labels, and other frequently used products are all printed with thermal printers. Thermal printers may print a single label or a whole roll of labels. On a variety of label sizes, they can also print small, high-density barcodes.</p>
+<center>
+<div class="image-typel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/thermalprinter.png">
+</div>
+</center>
+</div>
+</li>
+</ol>
+<br>
+<div class="main-head2l">Barcode scanners</div>
+<br>
+<p>There are four different types of barcode scanners to decode the generated barcodes.</p>
+<ol class="ol1l">
+<li>
+<strong class="stepl">Pen barcode scanner</strong>
+<div class="list-imgl">
+<div class="inner-listl">
+<p>Pen barcode readers are as little wand-like sticks that look like a small pen. In the tip of the pen-style barcode reader is an LED light and a photodiode. The LED light lights the black and white bars once the user passes this tip over a barcode. The photodiode detects light reflections and determines the width and color of each bar.</p>
+</div>
+<div class="inner-imagel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016142410537.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepl">Laser barcode scanner</strong>
+<div class="list-imgl">
+<div class="inner-listl">
+<p>A laser barcode scanner is slightly more sophisticated than a pen scanner in that it can take more precise light readings, preventing false positives and scanning mistakes. A laser beam is fired at a mirror within the real scanner in a laser scanner. The laser sweeps across the barcode in a straight line thanks to the movement of this mirror. After that, the light reflects back to a diode, which measures the amount of reflection. The digital signal readout of the barcode is translated from this reflection.</p>
+</div>
+<div class="inner-imagel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016142406f0e.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepl">CCD barcode scanner</strong>
+<div class="list-imgl">
+<div class="inner-listl">
+<p>Hundreds of small LED lights are placed in one long row on a charge coupled device (CCD), commonly known as an LED scanner. These lights are projected directly onto a barcode, and a sensor detects the voltage of ambient light in front of each light bulb. The barcode is digitally captured using this voltage measurement.</p>
+</div>
+<div class="inner-imagel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016142402e19.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepl">Imager barcode scanner</strong>
+<div class="list-imgl">
+<div class="inner-listl">
+<p>Rather than a scanner, these work more like a video camera. Instead of utilizing the laser to beam light at the code, the unit has a video camera that captures a picture of the barcode, which is then processed using advanced digital decoding algorithms. The major benefit of this type is that it can read the barcode regardless of how the scanner is positioned in front of it.</p>
+</div>
+<div class="inner-imagel">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016142405cd9.jpg">
+</div>
+</div>
+</li>
+</ol>
+<br>
+<div class="barcodebgl">
+<div>
+<center>
+<strong class="download-btn-head2l" style="color: #eeeeee !important;">DRPU Barcode Label Maker Software</strong>
+<br>
+<br>
+<a href="https://www.barcodegenerator.us/downloads/barcode-maker-demo.zip" target="_blank" title="DRPU Barcode Label Maker Software" class="btn-bottoml">DOWNLOAD</a>
+</center>
+</div>
+</div>
+<br>
+<div class="contactusl">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>
