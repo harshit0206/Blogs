@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>404 Not Found</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="" type="image/icon type">
+	<meta name="description" content="">
+	<style>
+	body {
+		margin: 0;
+		height: 100vh;
+		width:  100vw;
+		/*background: linear-gradient(to right, #f2f2f2, #d9d9d9);*/
+		overflow: hidden;
+	}
+		
+	nav{
+		background-color: #65A2FF;
+		background: linear-gradient(to right, #99c2ff, #3385ff);
+		height: 60px;
+	    top: 0;
+	    width: 100%;
+	    display: flex;
+	    font-size: 1.5em;
+	    font-weight: 600;
+	    color: #fff;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    align-content: center;
+	    justify-content: flex-end;
+	    align-items: center;
+	    z-index: 100;
+	}
+		
+	/*.logo{
+		margin-left: 20px;
+		font-size: 1.5em;
+		color: #fff;
+		animation: pulse 2s linear infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			font-size: 1.3em;
+		}
+		50% {
+			font-size: 1.5em;
+			transform: translatex(-2px);
+		}
+		100% {
+			font-size: 1.3em;
+		}
+	}*/
+
+	@media screen and (max-width: 520px){
+		/*.logo{
+			display: none;
+		}*/
+
+		nav{
+			justify-content: flex-end;
+			font-size: 1.3em;
+		}
+	}
+		
+	.nav-item{
+		margin: 0 10px;
+		padding: 10px;
+		border-radius: 10px;
+	}
+		
+	.nav-item:hover{
+		background-color: #0052cc;
+	}
+
+	@media screen and (max-width: 520px){
+		.nav-item{
+			margin: 0 5px;
+			padding: 5px;
+		}
+	}
+		
+	.nav-item a{
+		text-decoration: none;
+		color: #fff;
+		margin: auto;
+	}
+
+	#container{
+		width: 100%;
+		height: calc(100% - 120px);
+		overflow: hidden;
+	}
+
+	#motion1, #motion2, #motion3, #motion4, #motion5, #motion6 {
+		position: absolute;
+		width:  100%;
+		height: 100%;
+		z-index: -100;
+	}
+
+	#motion1 {
+		animation: motions 6s linear infinite;
+	}
+
+	#motion2 {
+		animation: motions 6.5s linear infinite;
+	}
+
+	#motion3 {
+		animation: motions 5.5s linear infinite;
+	}
+
+	#motion4 {
+		animation: motions 7s linear infinite;
+	}
+
+	#motion5 {
+		animation: motions 7.5s linear infinite;
+	}
+
+	#motion6 {
+		animation: motions 5s linear infinite;
+	}
+
+	@keyframes motions {
+		0% {
+			top: -100px
+		}
+		100% {
+			top: 100%;
+		}
+	}
+
+	#line1, #line2, #line3, #line4, #line5, #line6 {
+		height: 100px;
+		width: 2px;
+		background: #d5e3f9;
+		opacity: 1;
+		position: absolute;
+		left: 0;
+	}
+
+	#line1 {
+		left: 20%;
+		animation: line 6s linear infinite;
+	}
+
+	#line2 {
+		left: 40%;
+		animation: line 6.5s linear infinite;
+	}
+
+	#line3 {
+		left: 60%;
+		animation: line 5.5s linear infinite;
+	}
+
+	#line4 {
+		left: 80%;
+		animation: line 7s linear infinite;
+	}
+
+	#line5 {
+		left: 0px;
+		width: 2px;
+		animation: line 7.5s linear infinite;
+	}
+
+	#line6 {
+		left: calc(100% - 2px);
+		width: 2px;
+		animation: line 5s linear infinite;
+	}
+
+	@keyframes line {
+		0% {
+			height: 100px;
+		}
+		100% {
+			height: 10px;
+		}
+	}
+
+	.content{
+		display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    height: 100%;
+	    justify-content: space-between;
+	}
+
+	.heading1 {
+		margin: auto;
+		font-size: 180%;
+		font-weight: 200;
+		opacity: .5;
+		font-family: sans-serif;
+		color: #005ce6;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 680px){
+		.heading1{
+			font-size: 150%;
+		}
+	}
+
+	@media screen and (max-width: 520px){
+		.heading1{
+			font-size: 100%;
+		}
+	}
+
+	.buttons{
+		display: flex;
+		flex-direction: row;
+	    flex-wrap: wrap;
+	    align-content: center;
+	    align-items: center;
+	    justify-content: space-around;
+	    margin-bottom: 20px;
+	}
+
+	.btn-container{
+		margin: 0;
+		padding: 0;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.btn{
+		width: 160px;
+	    height: 160px;
+	    border: 2px solid #bbb;
+		display: flex;
+	    flex-direction: column;
+	    align-content: center;
+	    align-items: center;
+	    background: #fff;
+	    /*background: #f2f2f2;*/
+	}
+
+	.btn-head{
+		font-size: 130%;
+    	color: #31b2fa;
+    	margin: 30px 10px auto 10px;
+    	font-weight: 600;
+	}
+
+	.btn-info{
+		text-align: center;
+    	margin: auto 10px 30px 10px;
+    	font-size: 90%;
+    	color: #666;
+    	width: calc(100% - 20px);
+	}
+
+	@media screen and (max-width: 740px){
+		.btn{
+			width: 130px;
+		    height: 130px;
+		}
+
+		.btn-head{
+			font-size: 120%;
+	    	margin: 20px 10px auto 10px;
+		}
+
+		.btn-info{
+	    	margin: auto 10px 20px 10px;
+	    	font-size: 80%;
+		}
+	}
+
+	@media screen and (max-width: 610px){
+		.btn{
+			width: 110px;
+		    height: 110px;
+		}
+
+		.btn-head{
+			font-size: 100%;
+	    	margin: 20px 10px auto 10px;
+		}
+
+		.btn-info{
+	    	margin: auto 10px 20px 10px;
+	    	font-size: 72%;
+		}
+	}
+
+	@media screen and (max-width: 520px){
+		.btn-container{
+			width: 50%;
+		}
+
+		.btn{
+			width: 110px;
+		    height: 110px;
+		    margin: 0 auto 20px auto;
+		}
+
+		.buttons{
+		    margin-bottom: 0px;
+		}
+
+		.btn-head{
+			font-size: 100%;
+	    	margin: 20px 10px auto 10px;
+		}
+
+		.btn-info{
+	    	margin: auto 10px 20px 10px;
+	    	font-size: 72%;
+		}
+	}
+
+	footer{
+		height:  60px;
+		bottom: 0;
+		display: flex;
+		flex-direction: row;
+	    align-content: center;
+	    justify-content: center;
+	    align-items: center;
+	    background: linear-gradient(to right, #666, #333);
+	}
+
+	.footer-heading {
+		font-size: 120%;
+		font-weight: 200;
+		font-family: sans-serif;
+		color: #fff;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 520px){
+		.footer-heading{
+			font-size: 100%;
+		}
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<!--<div class="logo">404</div>-->
+			<div class="nav">
+				<span class="nav-item">
+					<a href="" rel="noopener">Home</a>
+				</span>
+				<span class="nav-item">
+					<a href="" rel="noopener">Download</a>
+				</span>
+				<span class="nav-item">
+					<a href="" rel="noopener">Contacts</a>
+				</span>
+			</div>
+		</nav>
+	</header>
+	<div id="container">
+		<div id="motion5">
+			<div id="line5"></div>
+		</div>
+		<div id="motion1">
+			<div id="line1"></div>
+		</div>
+		<div id="motion2">
+			<div id="line2"></div>
+		</div>
+		<div id="motion3">
+			<div id="line3"></div>
+		</div>
+		<div id="motion4">
+			<div id="line4"></div>
+		</div>
+		<div id="motion6">
+			<div id="line6"></div>
+		</div>
+		<div class="content">
+			<div class="heading1">It looks like something has gone away.<br><br><span style="color: #003d99; font-weight: 600;">Try the Menu</span> and see if you have better luck!</div>
+			<div class="buttons">
+				<div class="btn-container">
+					<a href="" rel="noopener" title="HOME">
+						<div class="btn">
+							<div class="btn-head">HOME</div>
+							<div class="btn-info">Data Recovery Software</div>
+						</div>
+					</a>
+				</div>
+				<div class="btn-container">
+					<a href="" rel="noopener" title="ORDER">
+						<div class="btn">
+							<div class="btn-head">ORDER</div>
+							<div class="btn-info">Downloads Windows Data Recovery Software</div>
+						</div>
+					</a>
+				</div>
+				<div class="btn-container">
+					<a href="" rel="noopener" title="DOWNLOAD">
+						<div class="btn">
+							<div class="btn-head">DOWNLOAD</div>
+							<div class="btn-info">Order Online Windows Data Recovery Software</div>
+						</div>
+					</a>
+				</div>
+				<div class="btn-container">
+					<a href="" rel="noopener" title="CONTACTS">
+						<div class="btn">
+							<div class="btn-head">CONTACTS</div>
+							<div class="btn-info">Our contacts</div>
+						</div>
+					</a>
+				</div>
+			</div>
+        </div>
+	</div>
+	<footer>
+        <div class="footer-heading">Sometimes getting lost isn't so bad.</div>
+	</footer>
+</body>
+</html>
