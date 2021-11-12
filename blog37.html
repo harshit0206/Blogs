@@ -1,0 +1,517 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009933;
+}
+
+.maine{
+color: #000;
+padding: 10px 60px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+	
+.maine p {
+text-align: justify;
+line-height: 2em !important;
+}
+
+.centere{
+text-align: center;
+}
+	
+.main-heade{
+color: #004d99;
+font-size: 1.5em !important;
+font-weight: bold;
+line-height: 1.5em !important;
+border-left: 5px solid #004d00 !important;
+text-align: left !important;
+margin: 0 !important;
+padding-left: 10px;
+}
+	
+.main-head2e{
+color: #000000;
+font-size: 1.5em;
+font-weight: bold;
+line-height: 1.5em;
+}
+	
+.mactope {
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/mactope.jpg");
+width: calc(100% + 100px);
+height: 500px;
+margin-left: -50px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-heade {
+color: #004d00;
+font-size: 1.2em;
+font-weight: 600;
+}
+
+.sece {
+width: 100%;
+display: table;
+}
+
+.btn-centere {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
+.triggere {
+position: relative;
+background: transparent;
+display: inline-block;
+width: 200px;
+height: 60px;
+color: #006699;
+transition: 0.45s;
+border-radius: 60px;
+box-shadow: 8px 8px 0 0 #006699, inset 8px 8px 0 0 #006699;
+left: -5px;
+}
+
+.triggere:hover{
+box-shadow: 0 0 0 0 #006699, inset 200px 60px 0 0 #006699;
+}
+
+.spane {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+overflow: hidden;
+}
+
+.spane .span2e {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 5px;
+top: 5px;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+font-weight: 600;
+}
+
+.clicke {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 100%;
+color: #fff;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+}
+
+.triggere::before {
+content: "7.1MB .zip";
+color: #fff;
+font-size: 0.9em;
+width: 150px;
+height: 40px;
+line-height: 40px;
+background: #222;
+border-radius: 5px;
+top: 90px;
+left: calc(50% - 75px); 
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggere::after {
+content: "";
+width: 0;
+height: 0;
+border: 10px solid transparent;
+border-bottom-color: #222;
+left: calc(50% - 10px); 
+top: 71px;
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggere:hover::before {
+opacity: 1;
+visibility: visible;
+top: 80px;
+}
+
+.triggere:hover::after {
+opacity: 1;
+visibility: visible;
+top: 61px;
+}
+
+.triggere:hover .span2e {
+top: -100%;
+}
+
+.triggere:hover .clicke {
+top: 0;
+}
+	
+.macbge{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 70px);
+height: 268px;
+margin-left: -50px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+}
+	
+.macbge::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+.download-btn-head2e{
+color: #eeeeee !important;
+font-size: 1.3em;
+font-weight: 600;
+text-shadow: 5px 4px 5px #000;
+}
+	
+a.btn-bottome{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottome:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.contactuse{
+margin-left: -50px;
+}
+
+.greybge{
+margin: 0;
+background: #e6e6e6;
+padding: 20px;
+}
+
+.ul2-heade{
+color: #3333ff;
+font-size: 1.2em;
+font-weight: bold;
+margin-bottom: 15px;
+margin-top: 20px;
+}
+
+.ul2e ul li{
+color: #1a73e8;
+margin:20px 0;
+}
+
+.ul2e ul li span{
+color: #666666;
+}
+
+.list-imge{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.inner-imagee{
+width: 40%;
+margin: auto 0 auto auto;
+}
+
+.inner-imagee img{
+width: 90%;
+margin: 0 auto auto auto !important;
+box-shadow: 5px 5px 5px #aaa;
+}
+
+.inner-liste{
+width: 60%;
+margin: auto auto auto 0;
+}
+	
+.inner-liste p{
+color: #000;
+margin: 0 !important;
+}
+
+.ol1e li{
+margin: 20px 0;
+}
+
+@media screen and (max-width: 1000px){
+
+.maine{
+padding: 10px 30px;
+}
+
+.mactope{
+width: calc(100% + 40px);
+height: 400px;
+margin-left: -20px;
+}
+
+.macbge{
+width: calc(100% + 10px);
+margin-left: -20px;
+}
+
+.contactuse{
+margin-left: -20px;
+}
+
+.inner-imagee{
+width: 50%;
+}
+		
+.inner-liste{
+width: 50%;
+font-size: .9em;
+}
+	
+.inner-liste p{
+letter-spacing: 1px;
+}
+}
+
+@media screen and (max-width: 840px){
+
+#container{
+margin: 0 !important;
+}
+
+.maine{
+font-size: 14px !important;
+padding: 10px 0;
+}
+
+.mactope{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.macbge{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.contactuse{
+margin-left: 0px;
+}
+
+.greybge{
+margin: 0 -10px;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.mactope{
+height: 300px;
+}
+		
+.inner-imagee{
+width: 100%;
+}
+		
+.inner-imagee img{
+margin: 0 auto !important;
+}
+		
+.inner-liste{
+width: 100%;
+font-size: 1em;
+}
+	
+.inner-liste p{
+margin-bottom: 20px !important;
+}
+}
+</style>
+<div class="maine">
+<div class="centere">
+<div class="mactope"></div>
+</div>
+<br>
+<p>Asset tagging is the process of applying tags or labels on assets in order to perceive them in part and to track data from their current location to their preservation history.</p>
+<br>
+<h2 class="main-heade">Barcodes in asset tracking</h2>
+<br>
+<p>Asset tracking is a crucial aspect of every business. The company should figure out the best technique to track its assets or inventory based on the operating parameters that work best for them.</p>
+<div class="list-imge">
+<div class="inner-liste">
+<p>For organizations of all sizes, barcode asset monitoring is a simple and cost-effective approach to manage and track their physical assets using Mac OS. Barcodes allow for real-time asset tracking while maintaining high accuracy. Although there are various alternative asset monitoring solutions, barcode is one of the most effective.</p>
+</div>
+<div class="inner-imagee">
+<img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/mace1.jpg">
+</div>
+</div>
+<br>
+<br>
+<div class="centere">
+<div class="download-btn-heade">MAC Barcode Generator - Corporate Edition</div>
+<br>
+<br>
+<div class="sece">
+<div class="btn-centere">
+<a class="triggere" href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener">
+<span class="spane">
+<span class="span2e">Download</span>
+<span class="clicke">CLICK HERE</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<p style="font-weight: 600;">You and your organization will benefit much from barcodes made with Mac. Here are a few examples:</p>
+<ol class="ol1e">
+<li>Inventory Control and Product Tracking</li>
+<li>Save both time and money</li>
+<li>Less human error and manual labor</li>
+</ol>
+<br>
+<h2 class="main-heade">Benefits of using barcodes to monitor assets</h2>
+<br>
+<p>Increased inventory accuracy, faster asset data collection, fewer asset tracking expenses, decreased mistakes, easier record-keeping, and a reasonably simple deployment procedure with minimum staff training are all advantages of barcode asset monitoring.</p>
+<div class="list-imge">
+<div class="inner-liste">
+<p>Assets can be easily traced no matter where they are by scanning barcodes. A barcode may get real-time information on a product's position, whether it's being transported from one location to another or is being serviced. Using barcodes to monitor assets also decreases the chance of human mistake, which may be costly to a business if data is input erroneously.</p>
+</div>
+<div class="inner-imagee">
+<img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/mace2.jpg">
+</div>
+</div>
+<br>
+<br>
+<div class="ul2e greybge">
+<div class="ul2-heade">When it comes to the value of scanning barcodes in asset monitoring systems, here are a few more advantages to consider:</div>
+<ul>
+<li><span>Huge volumes of data on each item are captured.</span></li>
+<li><span>Data integrity is improved.</span></li>
+<li><span>Accountability has improved.</span></li>
+<li><span>Labor expenses are reduced because inventory data input takes less time.</span></li>
+<li><span>Access to the location of each asset right away.</span></li>
+<li><span>Missed maintenance schedules are no longer an issue.</span></li>
+</ul>
+</div>
+<br>
+<div class="centere">
+<div class="download-btn-heade">MAC Barcode Generator - Corporate Edition</div>
+<br>
+<br>
+<div class="sece">
+<div class="btn-centere">
+<a class="triggere" href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener">
+<span class="spane">
+<span class="span2e">Download</span>
+<span class="clicke">CLICK HERE</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h2 class="main-heade">7 Reasons Why Asset Tracking with Barcodes is the Best Option</h2>
+<br>
+<div class="main-head2e">1. Errors are reduced</div>
+<br>
+<p>Barcodes can store a lot of information about the items they're tied to, and they're a lot faster and more accurate than manual asset monitoring.</p>
+<br>
+<div class="main-head2e">2. Improved performance</div>
+<br>
+<p>When compared to manual tracking of each and every asset or inventory in the warehouse, barcodes boost the pace of work for your company.</p>
+<br>
+<div class="main-head2e">3. Low-cost manufacturing</div>
+<br>
+<p>Barcodes are less costly to create in big quantities as compared to RFID technology.</p>
+<br>
+<div class="main-head2e">4. It’s simple to track</div>
+<br>
+<p>From manufacturing through purchase and beyond, knowing the location, quantity, and condition of your inventory is critical.</p>
+<br>
+<div class="main-head2e">5. Consistent integration</div>
+<br>
+<p>Barcode label technology integrates with your ERP and connects to your existing systems.</p>
+<br>
+<div class="main-head2e">6. A lot of information, delivered rapidly</div>
+<br>
+<p>The speed with which barcodes may be scanned to obtain information has previously been established. It's also vital to observe what information is visible right away when you scan a barcode.</p>
+<br>
+<div class="main-head2e">7. Asset tagging options</div>
+<br>
+<p>There are many different shapes, sizes, colors, and materials to choose from when it comes to barcodes. You'll need different barcode tags depending on your business, such as metalized polyester for a severe inside environment or anodized aluminum foil for outside scanning.</p>
+<br>
+<div class="macbge">
+<div>
+<div class="centere">
+<div class="download-btn-head2e" style="color: #eeeeee !important;">MAC Barcode Generator - Corporate Edition</div>
+<br>
+<br>
+<a href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener" class="btn-bottome">DOWNLOAD</a>
+</div>
+</div>
+</div>
+<br>
+<div class="contactuse">
+<span style="font-weight: 600;">For more information contact us:</span>
+<br>
+<div>
+<span style="font-weight: 600;">Email:&nbsp;</span>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<span style="font-weight: 600;">Website:&nbsp;</span>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" rel="noopener" style="text-decoration: none; color:#1a5eff;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

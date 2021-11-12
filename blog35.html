@@ -1,0 +1,584 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009933;
+}
+
+.mainf{
+color: #000;
+padding:0 20px;
+font-size: 18px;
+font-weight: 300;
+letter-spacing: 1.5px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+background-color: #f7f9fb;
+}
+
+.centerf{
+text-align: center;
+}
+	
+.main-headf{
+color: #004d99;
+font-size: 1.7em;
+font-weight: bold;
+line-height: 1.7em;
+border-left: 5px solid #004d00;
+padding-left: 10px;
+}
+	
+.main-head2f{
+color: #000000;
+font-size: 1.6em !important;
+font-weight: bold;
+line-height: 1.6em;
+text-align: left !important;
+margin: 0 !important;
+padding: 0 !important;
+}
+	
+.main-head3f{
+color: #000000;
+font-size: 1.4em;
+font-weight: bold;
+line-height: 1.4em;
+}
+	
+.mactopf{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/mactopf2.jpg");
+width: calc(100% + 40px);
+height: 382px;
+margin-left: -20px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-headf {
+color: #004d00;
+font-size: 1.2em;
+font-weight: 600;
+}
+
+.wrapf {
+width: 100%;
+margin: 20px auto;
+text-align: center;
+}
+	
+.btn-slidef {
+position: relative;
+display: inline-block;
+height: 60px;
+width: 200px;
+line-height: 60px;
+padding: 0;
+border-radius: 60px;
+background: #f7f9fb;
+border: 3px solid #006699;
+margin: 10px;
+transition: .8s;
+}
+	
+.btn-slidef span.circlef{
+display: block;
+background-color:#006699;
+color: #fff;
+position: absolute;
+float: left;
+margin: 5px;
+line-height: 52px;
+height: 50px;
+width: 50px;
+top: 0;
+left: 0;
+transition: .8s;
+border-radius: 50%;
+}
+	
+.btn-slidef span.titlef{
+position: absolute;
+left: 60px;
+text-align: center;
+margin: 0 auto;
+font-size: 20px;
+font-weight: bold;
+color: #006699;
+transition: .8s;
+}
+	
+.btn-slidef span.title-hoverf {
+position: absolute;
+left: 60px;
+text-align: center;
+margin: 0 auto;
+font-size: 20px;
+font-weight: bold;
+transition: .8s;
+opacity: 0;
+color: #fff;
+}
+	
+.btn-slidef span.circlef img{
+margin: 14px auto !important;
+width: 18px;
+height:  auto;
+}
+
+.btn-slidef::before {
+content: "6.2 MB .zip";
+color: #fff;
+font-size: 0.9em;
+width: 130px;
+height: 30px;
+line-height: 30px;
+background: #222;
+border-radius: 0 0 5px 5px;
+top: 30px;
+left: calc(50% - 65px); 
+position: absolute;
+opacity: 0;
+transition: all .8s .6s;
+}
+	
+.btn-slidef:hover {
+background-color: #006699;
+box-shadow: 5px 5px 8px #222;
+}
+	
+.btn-slidef:hover span.circlef{
+left: 100%;
+margin-left: -55px;
+background-color: #f7f9fb;
+color:#006699;
+}
+	
+.btn-slidef:hover span.titlef {
+left: 40px;
+opacity: 0;
+}
+	
+.btn-slidef:hover span.title-hoverf {
+opacity: 1;
+left: 18px;
+}
+	
+.btn-slidef:hover .circlef img{
+filter: invert(36%) sepia(69%) saturate(503%) hue-rotate(168deg) brightness(85%) contrast(86%);
+}
+
+.btn-slidef:hover::before {
+opacity: 1;
+top: 63px;
+}
+	
+.macbgf{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 10px);
+height: 268px;
+margin-left: -20px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+margin-top: 0;
+}
+	
+.macbgf::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+.download-btn-head2f{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+font-weight: 600;
+}
+	
+a.btn-bottomf{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: .8s;
+width: 137px;
+}
+	
+a.btn-bottomf:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+
+.inner-divf{
+padding: 0 20px;
+}
+
+.list-imgf{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+	
+ol.ol1f li{
+color: #b56637;
+font-size: 1.1em;
+margin-bottom: 20px;
+}
+
+.stepf{
+color: #1a5eff;
+font-weight: bold;
+}
+
+.inner-imagef{
+width: 40%;
+margin: auto 0 auto auto;
+}
+
+.inner-imagef img{
+width: 90%;
+margin: auto auto auto auto !important;
+box-shadow: 5px 5px 5px #aaa;
+}
+
+.inner-listf{
+width: 60%;
+margin: auto auto auto 0;
+}
+	
+.inner-listf p{
+letter-spacing: 1.5px;
+color: #000;
+font-size: 1em;
+}
+
+.greybgf{
+margin: 0 -20px;
+background: #e6e6e6;
+padding: 20px;
+}
+
+.ul2-headf{
+color: #3333ff;
+font-size: 1.2em;
+font-weight: bold;
+margin-bottom: 15px;
+margin-top: 20px;
+}
+
+.ul2f ul li{
+color: #1a73e8;
+margin:20px 0;
+}
+
+.ul2f ul li span{
+color: #666666;
+}
+
+.type-imgf{
+width: 50%;
+margin: 0 auto !important;
+}
+
+.type-imgf img{
+width: 100% !important;
+}
+
+ol.ol4f{
+list-style: lower-roman;
+}
+
+@media screen and (max-width: 1000px){		
+
+.mactopf{
+height:300px;
+}
+
+.type-imgf{
+width: 60%;
+}
+
+.inner-imagef{
+width: 50%;
+}
+		
+.inner-listf{
+width: 50%;
+}
+	
+.inner-listf p{
+letter-spacing: 1px;
+font-size: .9em;
+}
+}
+
+@media screen and (max-width: 840px){
+
+.mainf{
+font-size: 14px !important;
+padding: 0 10px;
+}
+	
+.mactopf{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.macbgf{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.inner-divf{
+padding: 0 10px;
+}
+
+.greybgf{
+margin: auto -10px;
+}
+
+.type-imgf{
+width: 70%;
+}
+}
+
+@media screen and (max-width: 680px){
+
+#container{
+margin: 0 !important;
+}
+
+.mainf{
+margin: 0 -10px;
+}
+		
+.mactopf{
+height:200px;
+}
+
+.type-imgf{
+width: 100%;
+}
+		
+.inner-imagef{
+width: 100%;
+margin: 0 0 0 -20px;
+}
+		
+.inner-listf{
+width: 100%;
+}
+}
+</style>
+<div class="mainf">
+<div class="centerf">
+<div class="mactopf"></div>
+</div>
+<br>
+<p style="font-weight: 600;">In this article we will know about these tools to create barcodes in using your Mac.</p>
+<ol class="ol3f">
+<li>Barcode types</li>
+<li>Barcode software</li>
+<li>Barcode hardware
+<ol class="ol4f">
+<li>Barcode Label Printers</li>
+<li>Barcode Scanners</li>
+</ol>
+</li>
+<li>How to connect printer and scanner to your Mac</li>
+</ol>
+<br>
+<p>A barcode is a machine-readable code that is presented on a product and consists of numbers and a pattern of parallel lines of varied lengths. Businesses and organizations may track items, pricing, and stock levels with barcode systems, resulting in considerable productivity and efficiency advantages. The use of a barcode cuts the time it takes to gather such data in half and eliminates the risk of human data input mistakes.</p>
+<div class="centerf">
+<div class="download-btn-headf">MAC Barcode Generator - Standard Edition</div>
+<br>
+<div class="wrapf">
+<a href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener" class="btn-slidef">
+<span class="circlef"><img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+<span class="titlef">DOWNLOAD</span>
+<span class="title-hoverf">Click here</span>
+</a>
+</div>
+</div>
+<br>
+<br>
+<p style="font-weight: 600;">You can produce several various sorts of barcodes with your Mac, each with its own set of benefits and drawbacks.</p>
+<h2 class="main-head2f" id="barcode-typef">1D Barcode type</h2>
+<br>
+<p>One-dimensional (or 1D) barcodes encode data by systematically varying the lengths and spacing of parallel lines. In order to reduce time and streamline inventory procedures, 1D barcodes are commonly used in commercial operations.</p>
+<p>E.g. UPC, EAN, Code 39, Codabar, Interleaved 2 of 5, and many more.</p>
+<div class="centerf">
+<img loading="lazy" alt="image" width="450" height="165" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016140023d94.png">
+</div>
+<br>
+<br>
+<h2 class="main-head2f">2D Barcode Type</h2>
+<br>
+<p>Two-dimensional (or 2D) barcodes reliably represent data using two-dimensional symbols and shapes. When compared to 1D barcodes, they can contain more data per square inch. Error-protection equations are also available in 2D barcodes, which is a significant benefit. 2D barcodes are well-suited to high-volume, high-speed scanning applications.</p>
+<p>E.g. DataMatrix, QR Code, PDF 417.</p>
+<div class="centerf">
+<img loading="lazy" alt="image" width="450" height="165" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016140025c9b.png">
+</div>
+<br>
+<br>
+<p style="font-weight: 600;">The tools needed to produce barcodes for a new retail enterprise using Mac OS are listed below.</p>
+<div class="main-headf" id="barcode-softwaref">Barcode Software</div>
+<br>
+<p>Utilizing a full barcode system, such as the DRPU Barcode Label Maker Software, is a simple method to incorporate barcodes into your business using Mac OS.</p>
+<br>
+<div class="centerf">
+<div class="download-btn-headf">MAC Barcode Generator - Standard Edition</div>
+<br>
+<div class="wrapf">
+<a href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener" class="btn-slidef">
+<span class="circlef"><img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+<span class="titlef">DOWNLOAD</span>
+<span class="title-hoverf">Click here</span>
+</a>
+</div>
+</div>
+<br>
+<br>
+<p>The software creates Linear and 2D barcode labels in a simple manner, allowing users to create barcode labels with text, lines, images, and other creative items, as well as using the Batch Processing Series tool to make many copies of labels in Mac OS. This software may be used to produce barcode labels in a variety of industries, including corporate, publishing, healthcare, warehousing, and the post office.</p>
+<br>
+<div class="main-headf" id="barcode-hardwaref">Barcode Hardware</div>
+<br>
+<h2 class="main-head2f" id="barcode-printerf">i. Barcode Label Printers</h2>
+<br>
+<p>Thermal printing, which is great for label printing on the Mac, comes in two flavors. For your Mac, you may use either a thermal transfer printer or a direct thermal printer.</p>
+<br>
+<div class="inner-divf">
+<div class="main-head3f">a. Direct Thermal Printer</div>
+<br>
+<p>For producing barcode labels on a Mac, direct thermal printers are a cost-effective choice. Because it doesn't need ink, toner, or a printing ribbon, you save money on supplies. Labels should last for as long as possible if they are not exposed to direct sunshine or high heat.</p>
+<p>The picture is created directly on the label material, which is heat-sensitive chemically treated paper, using heat from a thermal printer. When the print head's components make contact with direct thermal paper, it turns black. This is the type of printing you'll find on receipts from ATMs, petrol stations, and other businesses.</p>
+<div class="centerf">
+<div class="type-imgf">
+<img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/directthermal.jpg">
+</div>
+</div>
+<br>
+<p>Label life is only around six months, and direct contact with the label medium causes the printhead to wear out faster. A direct thermal printer is a fantastic alternative to consider if your barcode labels will be used largely inside.</p>
+<br>
+<div class="main-head3f">b. Thermal Transfer Printer</div>
+<br>
+<p>Thermal transfer is another heat-based barcode printing method. Instead of instantly imprinting on the paper, the printhead's hot element makes contact with a particular ribbon, which then conveys the image to the label media. The wax or resin of ribbon melts into the label, hardening to a durable, long-lasting gloss.</p>
+<p>Thermal transfer uses a ribbon, which wears down the printhead more slowly and, most significantly, provides long-lasting labels.</p>
+<div class="centerf">
+<div class="type-imgf">
+<img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/thermaltransfer.jpg">
+</div>
+</div>
+<br>
+<p>In tough situations, thermal transfer generates long-lasting labels that resist scratches and smudging.</p>
+</div>
+<p>Among the numerous types of thermal printers for Mac, there are more alternatives in terms of features and functionality. You can make barcodes with a variety of printers, including desktop, mid-range, industrial, and portable thermal barcode printers.</p>
+<br>
+<h2 class="main-head2f" id="barcode-scannerf">ii. Barcode Scanners</h2>
+<br>
+<p>To decode the created barcodes, your Mac has four different types of barcode scanners.</p>
+<ol class="ol1f">
+<li>
+<strong class="stepf">Pen barcode Scanner</strong>
+<div class="list-imgf">
+<div class="inner-listf">
+<p>Pen barcode readers are little wand-like sticks that resemble a pen. An LED light and a photodiode are located at the tip of the pen-style barcode reader. When the user moves this tip over a barcode, the LED light illuminates the black and white bars. Each bar's width and color are determined by the photodiode, which detects light reflections.</p>
+</div>
+<div class="inner-imagef">
+<img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016142410537.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepf">Laser barcode Scanner</strong>
+<div class="list-imgf">
+<div class="inner-listf">
+<p>A laser barcode scanner is a step up from a pen scanner in that it can take more exact light readings, reducing false positives and scanning errors. In a laser scanner, a laser beam is directed at a mirror within the real scanner. Because of the movement of this mirror, the laser sweeps across the barcode in a straight line. This reflection is used to convert the digital signal readout of the barcode.</p>
+</div>
+<div class="inner-imagef">
+<img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/laserscanner.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepf">CCD barcode Scanner</strong>
+<div class="list-imgf">
+<div class="inner-listf">
+<p>Hundreds of small LED lights are stacked in a continuous row on a charge coupled device (CCD), often known as an LED scanner. These lights are projected directly onto a barcode, and a sensor in front of each light bulb monitors the voltage of ambient light. This voltage measurement is used to digitally capture the barcode.</p>
+</div>
+<div class="inner-imagef">
+<img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/ccdscanner.jpg">
+</div>
+</div>
+</li>
+<li>
+<strong class="stepf">Image barcode Scanner</strong>
+<div class="list-imgf">
+<div class="inner-listf">
+<p>These work more like a video camera than a scanner. The machine features a video camera that records a picture of the barcode, which is subsequently analyzed using powerful digital decoding algorithms instead of using the laser to shoot light at it. The main advantage of this type is that it can read barcodes no matter which way the scanner is positioned in front of it.</p>
+</div>
+<div class="inner-imagef">
+<img loading="lazy" alt="image" width="300" height="200" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/20211016142405cd9.jpg">
+</div>
+</div>
+</li>
+</ol>
+<br>
+<div class="ul2f greybgf" id="connect-macf">
+<div class="ul2-headf">How to connect a scanner & printer with Mac</div>
+<ul>
+<li><span>Before you begin setting up your scanner and printer, make sure Mac OS has the latest scanner and printer software.</span></li>
+<li><span>If you have a multifunction AirPrint scanner and printer, you won't need to check for software updates.</span></li>
+<li><span>To unpack and connect your scanner or printer to your Mac, follow the directions that came with it.</span></li>
+<li><span>If your Mac only has one USB-C port and you want to connect a USB printer, you'll need a multiport converter. To increase the battery life of your Mac, connect the scanner or printer and then plug in a USB-C connection to a power supply.</span></li>
+<li><span>Select System Preferences -> Add Printer & Scanner from the Apple menu.</span></li>
+<li><span>Then, after selecting your scanner or printer, click add.</span></li>
+</ul>
+</div>
+<div class="macbgf">
+<div>
+<div class="centerf">
+<div class="download-btn-head2f" style="color: #eeeeee !important;">MAC Barcode Generator - Standard Edition</div>
+<br>
+<br>
+<a href="https://www.barcodegenerator.us/downloads/barcodemaker-macdemo.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener" class="btn-bottomf">DOWNLOAD</a>
+</div>
+</div>
+</div>
+<br>
+<div class="contactusf">
+<span style="font-weight: 600;">For more information contact us:</span>
+<br>
+<div>
+<span style="font-weight: 600;">Email:&nbsp;</span>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<span style="font-weight: 600;">Website:&nbsp;</span>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" rel="noopener" style="text-decoration: none; color:#1a5eff;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

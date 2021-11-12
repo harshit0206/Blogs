@@ -1,0 +1,521 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009973;
+}
+	
+.maink {
+color: #000;
+padding: 10px 60px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+	
+.maink p {
+text-align: justify;
+}
+	
+.main-headk {
+color: #004d99;
+font-size: 1.5em;
+font-weight: bold;
+}
+	
+.banktopk {
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/banktop2k.jpg");
+width: calc(100% + 100px);
+height: 500px;
+margin-left: -50px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-headk {
+color: #004d00;
+font-size: 1.2em;
+}
+
+section.seck {
+width: 100%;
+display: table;
+}
+
+.centerk {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
+.triggerk {
+position: relative;
+background: transparent;
+display: inline-block;
+width: 200px;
+height: 60px;
+color: #006699;
+transition: 0.45s;
+border-radius: 60px;
+box-shadow: 8px 8px 0 0 #006699, inset 8px 8px 0 0 #006699;
+left: -5px;
+}
+
+.triggerk:hover{
+box-shadow: 0 0 0 0 #006699, inset 200px 60px 0 0 #006699;
+}
+
+.spank {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+overflow: hidden;
+}
+
+.spank strong {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 5px;
+top: 5px;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+}
+
+.clickk {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 100%;
+color: #fff;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+}
+
+.triggerk:hover strong {
+top: -100%;
+}
+
+.triggerk:hover .clickk {
+top: 0;
+}
+
+.list-imgk{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.greybgk{
+width: 100%;
+margin: auto 0 auto 0;
+background: #e6e6e6;
+}
+
+.ol4-headk{
+color: #1a73e8;
+font-size: 1.2em;
+font-weight: bold;
+margin-bottom: 15px;
+margin-top: 20px;
+}
+
+.ol4k ol li{
+color: #1a73e8;
+margin:20px;
+}
+
+.ol4k ol li span{
+color: #666666;
+}
+
+.ol4k {
+width: 50%;
+margin: auto auto auto auto !important;
+}
+
+.ol-imgk{
+width: 30%;
+margin: auto auto auto auto;
+}
+
+.ol-imgk img{
+width: 90%;
+margin: auto auto auto auto;
+}
+
+ul.ul1k li, ul.ul2k li, ul.ul5k li {
+margin: 0 10px 20px 10px;
+}
+	
+ol.ol3k li{
+color: #5085a5;
+font-size: 1.1em;
+margin-bottom: 40px;
+}
+
+ol.ol3k p{
+color: #000;
+font-size: .9em;
+}
+
+.stepk{
+color: #5085a5;
+font-weight: bold;
+}
+
+.image-typek{
+width: 50%;
+margin-left: -30px;
+}
+
+.image-typek img{
+width: 90%;
+margin: auto auto auto auto !important;
+}
+
+.float-imgk{
+width: 45%;
+max-width: 500px;
+float: right;
+margin: 0 0 0 20px !important;
+}
+
+.float-imgk img{
+width: 100% !important;
+margin: 0 !important;
+}
+	
+.bankbgk{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 70px);
+height: 268px;
+margin-left: -50px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+}
+	
+.bankbgk::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+.download-btn-head2k{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+}
+	
+a.btn-bottomk{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottomk:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.contactusk{
+margin-left: -50px;
+}
+
+@media screen and (max-width: 1000px){
+
+.maink{
+padding: 10px 30px;
+}
+
+.banktopk{
+width: calc(100% + 40px);
+height: 400px;
+margin-left: -20px;
+}
+
+.bankbgk{
+width: calc(100% + 10px);
+margin-left: -20px;
+}
+
+.contactusk{
+margin-left: -20px;
+}
+
+.image-typek{
+width: 60%;
+}
+
+.ol-imgk{
+width: 40%;
+}
+
+.float-imgk{
+width: 50%;
+}
+}
+
+@media screen and (max-width: 840px){
+
+#container{
+margin: 0 !important;
+}
+
+.maink{
+font-size: 14px !important;
+padding: 10px 0;
+}
+
+.banktopk{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.bankbgk{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.contactusk{
+margin-left: 0px;
+}
+
+.image-typek{
+width: 70%;
+}
+}
+
+@media screen and (max-width: 760px){
+
+.float-imgk{
+float: none;
+width: 100%;
+margin: 0 auto 20px auto !important;
+}
+
+.float-imgk img{
+width: 75% !important;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.banktopk{
+height: 300px;
+}
+
+.float-imgk img{
+width: 95% !important;
+}
+
+.image-typek{
+width: 100%;
+}
+
+.ol4k {
+width: 100%;
+}
+
+.ol4-headk{
+text-align: center;
+}
+
+.ol-imgk{
+width: 60%;
+}
+}
+</style>
+<div class="maink">
+<center>
+<div class="banktopk"></div>
+</center>
+<br>
+<p>A barcode is a machine-readable visual representation of data about the object to which it is attached. Barcodes were most often seen at supermarkets. They gradually expanded to other industries, with logistics being the first to catch on. Barcodes are now found in almost every business, including books, medicines, postal packages, courier packages, hospitals, and education. Barcodes have also shown to be beneficial to financial firms. Barcodes are mostly employed in financial institutions to track documents.</p>
+<p>Utility bills, such as telephone and electric bills, credit card and bank account statements, Ration cards, driving licenses, PAN cards, partnership deeds, government registration certificates, and UIDAI-Aadhaar are examples of documents that can be barcoded and used in the financial business.</p>
+<p><strong>Let’s review some of the benefits of utilizing barcoded images:</strong></p>
+<ul class="ul1k">
+<li><span>Efficiency</span></li>
+<li><span>Easy Scanning</span></li>
+<li><span>No Stacking Order</span></li>
+</ul>
+<br>
+<center>
+<strong class="download-btn-headk">DRPU Barcode Software for Banks</strong>
+<br>
+<br>
+<section class="seck">
+<div class="centerk">
+<a class="triggerk" href="https://www.barcodegenerator.us/downloads/bank-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Banks">
+<span class="spank">
+<strong>Download</strong>
+<div class="clickk">CLICK HERE</div>
+</span>
+</a>
+</div>
+</section>
+</center>
+<br>
+<br>
+<div class="main-headk">Barcodes in banking</div>
+<br>
+<div>
+<div class="float-imgk">
+<center><img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/bank5k.jpg"></center>
+</div>
+<p>Without barcodes, preparing, indexing, and scanning files can take up to 8 minutes per document. That's a lot of time wasted! Using barcodes during file preparation allows scanning to be performed in under one minute using a multifunction device.</p>
+<p>In banking, barcodes are employed on credit, loan, deposit, and trust papers. Preparing documents can begin while they are being collected by placing barcode cover sheets in front of them (rather than the current tabs being used within paper files today).</p>
+<p>By allowing users to print barcodes directly on papers, bank document preparation tools can significantly simplify the scanning process. This option saves a lot of time and makes scanning by persons outside of the department a lot simpler.</p>
+</div>
+<p><strong>Here are a few innovative applications of barcodes in payments from around the globe:</strong></p>
+<ul class="ul2k">
+<li><span>Barcodes with payment card information via mobile apps</span></li>
+<li><span>Barcodes on invoices for bill payments</span></li>
+<li><span>Barcodes for mobile wallet or engage in e-commerce</span></li>
+<li><span>App-to-app payments</span></li>
+</ul>
+<br>
+<div class="main-headk">Frauds in Banking Sector</div>
+<br>
+<ol class="ol3k">
+<li>
+<strong class="stepk">Request money fraud</strong>
+<br>
+<br>
+<div>
+<p>Fraudsters take advantage of the UPI request feature by making bogus payment requests with messages such as "Enter your UPI PIN to get money," "Payment successful receive Rs. xxx," and so on. You need to enter PIN only for sending money.</p>
+<center>
+<div class="image-typek">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/bank1k.jpg">
+</div>
+</center>
+</div>
+</li>
+<li>
+<strong class="stepk">Remote access app</strong>
+<br>
+<br>
+<div>
+<p>Fraudsters persuade consumers to download and use screen-sharing tools like Screenshare, Anydesk, and Teamviewer to gain access to bank information. These apps aren't malicious, but they do provide a third party access to your mobile data.</p>
+<center>
+<div class="image-typek">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/bank2k.jpg">
+</div>
+</center>
+</div>
+</li>
+<li>
+<strong class="stepk">Impersonation fraud</strong>
+<br>
+<br>
+<div>
+<p>In response to a post, fraudsters track complaints on social media and publish bogus connections or mimic bankers or RBI officials, asking for private information that no lender should ask for.</p>
+<center>
+<div class="image-typek">
+<img src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/bank3k.jpg">
+</div>
+</center>
+</div>
+</li>
+</ol>
+<br>
+<center>
+<strong class="download-btn-headk">DRPU Barcode Software for Banks</strong>
+<br>
+<br>
+<section class="seck">
+<div class="centerk">
+<a class="triggerk" href="https://www.barcodegenerator.us/downloads/bank-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Banks">
+<span class="spank">
+<strong>Download</strong>
+<div class="clickk">CLICK HERE</div>
+</span>
+</a>
+</div>
+</section>
+</center>
+<br>
+<br>
+<div class="main-headk">How to Minimize Fraudulent Documents</div>
+<br>
+<p>It's possible that the solution is shockingly easy. With recent advances in document security, safeguarding a document (even a cheque) with a QR code is now simple, fast, and economical. The solution is built on cutting-edge technology that allows for secure QR code incorporation in printed and electronic documents. At the time of issue of the check book, a Secure QR Code comprising details such as the cheque number, account number, and bank code is appended to the cheques. Only the issuing bank may generate such a high-security, tamperproof code, which is digitally signed with their private key. This code can't be made by anyone else. As a result, even if a false cheque leaf is created, the QR code on it will not contain the same information.</p>
+<div class="list-imgk greybgk">
+<div class="ol4k">
+<div class="ol4-headk">The QR code has four important advantages</div>
+<ol>
+<li><span>It stores a large volume of data.</span></li>
+<li><span>It can be scanned from a screen, not just paper.</span></li>
+<li><span>It can be read even if part of the code is damaged.</span></li>
+<li><span>It’s safer because information can be encrypted.</span></li>
+</ol>
+</div>
+<div class="ol-imgk">
+<center>
+<img src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/advertisementqr.png">
+</center>
+</div>
+</div>
+<br>
+<p>The information inside the Secure QR code can be cross-checked with the MICR information to confirm the cheque and identify illegitimate ones using a Smartphone or machine. Most importantly, as previously stated each QR code is distinctive and can only be issued by the issuing bank. Furthermore, this technology is simple to connect with current infrastructure and is capable of handling the required processing quantities.</p>
+<p><strong>Key benefits of using a secure QR code for a bank account or financial statement are:</strong></p>
+<ul class="ul5k">
+<li><span>Works for both printed and electronic documents</span></li>
+<li><span>No need to Access Central Database</span></li>
+<li><span>Easy to validate</span></li>
+</ul>
+<br>
+<div class="bankbgk">
+<div>
+<center>
+<strong class="download-btn-head2k" style="color: #eeeeee !important;">DRPU Barcode Software for Banks</strong>
+<br>
+<br>
+<a href="https://www.barcodegenerator.us/downloads/bank-barcode-software.zip" target="_blank" title="DRPU Barcode Software for Banks" class="btn-bottomk">DOWNLOAD</a>
+</center>
+</div>
+</div>
+<br>
+<div class="contactusk">
+<strong>For more information contact us:</strong>
+<br>
+<div>
+<strong>Email:&nbsp;</strong>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<strong>Website:&nbsp;</strong>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

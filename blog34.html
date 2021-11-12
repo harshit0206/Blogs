@@ -1,0 +1,485 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009973;
+}
+	
+.maing {
+color: #000;
+padding: 10px 60px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+	
+.maing p {
+text-align: justify;
+line-height: 2em !important;
+}
+	
+.main-headg {
+color: #004d99;
+font-size: 1.5em;
+font-weight: bold;
+line-height: 1.5em;
+}
+	
+.main-head2g{
+color: #000000;
+font-size: 1.7em;
+font-weight: bold;
+line-height: 1.7em;
+}
+
+.centerg{
+text-align: center;
+}
+	
+.mactopg {
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/mactopg.jpg");
+width: calc(100% + 100px);
+height: 500px;
+margin-left: -50px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-headg {
+color: #004d00;
+font-size: 1.2em;
+font-weight: 600;
+}
+
+.wrapg {
+width: 100%;
+margin: 20px auto;
+text-align: center;
+}
+	
+.btn-slideg {
+position: relative;
+display: inline-block;
+height: 60px;
+width: 200px;
+line-height: 60px;
+padding: 0;
+border-radius: 60px;
+background: #fff;
+border: 3px solid #006699;
+margin: 10px;
+transition: .8s;
+}
+	
+.btn-slideg span.circleg{
+display: block;
+background-color:#006699;
+color: #fff;
+position: absolute;
+float: left;
+margin: 5px;
+line-height: 52px;
+height: 50px;
+width: 50px;
+top: 0;
+left: 0;
+transition: .8s;
+border-radius: 50%;
+}
+	
+.btn-slideg span.titleg{
+position: absolute;
+left: 60px;
+text-align: center;
+margin: 0 auto;
+font-size: 20px;
+font-weight: bold;
+color: #006699;
+transition: .8s;
+}
+	
+.btn-slideg span.title-hoverg {
+position: absolute;
+left: 60px;
+text-align: center;
+margin: 0 auto;
+font-size: 20px;
+font-weight: bold;
+transition: .8s;
+opacity: 0;
+color: #fff;
+}
+	
+.btn-slideg span.circleg img{
+margin: 14px auto !important;
+}
+
+.btn-slideg::before {
+content: "6.2 MB .zip";
+color: #fff;
+font-size: 0.9em;
+width: 130px;
+height: 30px;
+line-height: 30px;
+background: #222;
+border-radius: 0 0 5px 5px;
+top: 30px;
+left: calc(50% - 65px); 
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: top .8s .6s;
+z-index: -1;
+}
+	
+.btn-slideg:hover {
+background-color: #006699;
+box-shadow: 5px 5px 8px #222;
+}
+	
+.btn-slideg:hover span.circleg{
+left: 100%;
+margin-left: -55px;
+background-color: #fff;
+color:#006699;
+}
+	
+.btn-slideg:hover span.titleg {
+left: 40px;
+opacity: 0;
+}
+	
+.btn-slideg:hover span.title-hoverg {
+opacity: 1;
+left: 18px;
+}
+	
+.btn-slideg:hover .circleg img{
+filter: invert(36%) sepia(69%) saturate(503%) hue-rotate(168deg) brightness(85%) contrast(86%);
+}
+
+.btn-slideg:hover::before {
+opacity: 1;
+visibility: visible;
+top: 63px;
+}
+	
+.macbgg{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 70px);
+height: 268px;
+margin-left: -50px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+}
+	
+.macbgg::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+.download-btn-head2g{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+font-weight: 600;
+}
+	
+a.btn-bottomg{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottomg:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.contactusg{
+margin-left: -50px;
+}
+
+.typeg{
+padding: 0 20px;
+margin: 20px 0;
+}
+
+.float-imgg{
+width: 35%;
+max-width: 500px;
+float: right;
+margin: 0 0 0 20px !important;
+}
+
+.float-imgg img{
+width: 100% !important;
+margin: 0 !important;
+}
+
+.list-imgg{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.ul1g{
+width: 45%;
+margin: auto 0 !important;
+}
+
+.ul1g li{
+margin: 20px 0;
+}
+
+.list-btng{
+width: 55%;
+margin: auto 0 !important;
+}
+
+@media screen and (max-width: 1000px){
+
+.maing{
+padding: 10px 30px;
+}
+
+.mactopg{
+width: calc(100% + 40px);
+height: 400px;
+margin-left: -20px;
+}
+
+.macbgg{
+width: calc(100% + 10px);
+margin-left: -20px;
+}
+
+.contactusg{
+margin-left: -20px;
+}
+
+.float-imgg{
+width: 45%;
+}
+}
+
+@media screen and (max-width: 840px){
+
+#container{
+margin: 0 !important;
+}
+
+.maing{
+font-size: 14px !important;
+padding: 10px 0;
+}
+
+.mactopg{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.macbgg{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.contactusg{
+margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 760px){
+
+.float-imgg{
+float: none;
+width: 100%;
+margin: 0 auto 20px auto !important;
+}
+
+.float-imgg img{
+width: 75% !important;
+}
+
+.ul1g{
+width: 100%;
+}
+
+.ul1g li{
+margin: 20px 10px;
+}
+
+.list-btng{
+width: 100%;
+margin: 10px 0 0 0 !important;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.mactopg{
+height: 300px;
+}
+
+.typeg{
+padding: 0 10px;
+}
+
+.float-imgg img{
+width: 95% !important;
+}
+}
+
+@media screen and (min-width: 2150px){
+
+.float-imgg{
+max-width: 400px;
+}
+}
+</style>
+<div class="maing">
+<div class="centerg">
+<div class="mactopg"></div>
+</div>
+<br>
+<p>For distribution, wholesale and manufacturing organizations, barcodes and barcode scanners have become the most commonly accepted method of reducing errors in inventory management in their warehouse. </p>
+<p>With the use of DRPU Barcode Label Maker for Mac, Mac produces dense, sharp-edged barcodes which improve the productivity across organizations. In this post, we'll look at how barcodes may help you run your organization with improved productivity using MacOS.</p>
+<br>
+<div class="centerg">
+<div class="download-btn-headg">MAC Barcode Generator - Standard Edition</div>
+<br>
+<div class="wrapg">
+<a href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener" class="btn-slideg">
+<span class="circleg"><img loading="lazy" alt="image" width=18 height=16 src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+<span class="titleg">DOWNLOAD</span>
+<span class="title-hoverg">Click here</span>
+</a>
+</div>
+</div>
+<br>
+<br>
+<div class="main-headg">Barcode Improve Productivity across your Organization</div>
+<p>From the things you buy in stores to mail and identity cards, barcodes are all around us. Information is encoded in barcodes for the purpose of identification. Barcode technology demonstrates its numerous advantages throughout a wide range of businesses.</p>
+<div class="centerg">
+<div class="type-imgg">
+<img loading="lazy" alt="image" width=300 height=200 src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/macg1.jpg">
+</div>
+</div>
+<br>
+<p>Productivity is crucial to a company's success. Barcode tracking technology aids in improving the bottom line and actively meeting the competitive difficulties that your company faces on a daily basis. In several sectors, barcode technology provides an accurate, efficient, and speedier method of gathering, processing, transferring, recording, and maintaining data. When you have better and more knowledge, you can take advantage of greater opportunities to scale up and get an advantage over your competitors.</p>
+<p>In a range of sectors, barcodes are utilized to increase productivity in a variety of ways. For a better understanding of how barcodes increase productivity and simplify processes using MacOS, we look at the following things which barcodes provide.</p>
+<br>
+<div class="list-imgg">
+<div class="ul1g">
+<ul>
+<li><span>Reducing human errors</span></li>
+<li><span>Helping organizations in improving productivity</span></li>
+<li><span>Saving time by data entry optimization</span></li>
+</ul>
+</div>
+<div class="list-btng">
+<div class="centerg">
+<div class="download-btn-headg">MAC Barcode Generator - Standard Edition</div>
+<br>
+<div class="wrapg">
+<a href="https://www.barcodegenerator.us/downloads/barcodemaker-macdemo.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener" class="btn-slideg">
+<span class="circleg"><img loading="lazy" alt="image" width=18 height=16 src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/downloadicon.png"></span>
+<span class="titleg">DOWNLOAD</span>
+<span class="title-hoverg">Click here</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="main-head2g">1. Reducing human errors</div>
+<div class="typeg">
+<div class="float-imgg">
+<div class="centerg">
+<img loading="lazy" alt="image" width=300 height=200 src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/macg2.jpg">
+</div>
+</div>
+<div class="type-parag">
+<p>In enterprises, warehouses, and other facilities that rely on manual data input, human error is a typical occurrence. It's all too easy for employees to flip numbers, skip a line, misread a number, or utilize illegible handwriting while entering data by hand.</p>
+<p>Barcodes, on the other hand, reduce the possibility of human error. Because barcode scans are faster, more reliable, and require less time, they are more efficient than human data input. When barcodes are processed, the images are quickly and accurately translated to a display in application software on a computer or a mobile device, avoiding human data entry errors. Employees with barcode systems also work faster than manual data input.</p>
+</div>
+</div>
+<br>
+<div class="main-head2g">2. Helping organizations in improving productivity</div>
+<div class="typeg">
+<div class="float-imgg">
+<div class="centerg">
+<img loading="lazy" alt="image" width=300 height=200 src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/macg3.jpg">
+</div>
+</div>
+<div class="type-parag">
+<p>Barcodes can increase productivity by cutting warehousing costs and improving inventory efficiency. Employee productivity can be boosted by allowing employees to focus on other tasks or finish more orders since barcode scanners allow them to handle more orders faster than they could without them.</p>
+<p>Barcodes minimize human processes by automatically storing product information. It lowers labour costs and increases productivity by reducing paperwork. Data entry is automated through barcode scanning, reducing the chance of human error. Using digitally recorded data, businesses can effectively manage their orders, stocks, and shipments in this way the productivity increases.</p>
+</div>
+</div>
+<br>
+<div class="main-head2g">3. Saving time by data entry optimization</div>
+<div class="typeg">
+<div class="float-imgg">
+<div class="centerg">
+<img loading="lazy" alt="image" width=300 height=200 src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/macg4.jpg">
+</div>
+</div>
+<div class="type-parag">
+<p>Barcodes help businesses save time. Most barcode scanners come with software that eliminates the need for manual data entering and writing. As a consequence, whenever an employee scans a barcode, the data in the central database is automatically updated.</p>
+<p>Because all information can be kept digitally and simply scanned, all paperwork-related labour may be completely avoided. Barcodes allow workers to reduce time between their workstation and the warehouse because of their increased mobility.</p>
+</div>
+</div>
+<br>
+<div class="macbgg">
+<div>
+<div class="centerg">
+<div class="download-btn-head2g" style="color: #eeeeee !important;">MAC Barcode Generator - Standard Edition</div>
+<br>
+<br>
+<a href="https://www.barcodegenerator.us/downloads/barcodemaker-macdemo.zip" target="_blank" title="DRPU Barcode Maker Software" rel="noopener" class="btn-bottomg">DOWNLOAD</a>
+</div>
+</div>
+</div>
+<br>
+<div class="contactusg">
+<span style="font-weight: 600;">For more information contact us:</span>
+<br>
+<div>
+<span style="font-weight: 600;">Email:&nbsp;</span>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<span style="font-weight: 600;">Website:&nbsp;</span>
+<span>
+<a href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" rel="noopener" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>

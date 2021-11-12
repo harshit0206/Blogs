@@ -1,0 +1,581 @@
+<style>
+body{
+word-break: unset !important;
+}
+	
+::selection {
+color: #fff;
+background: #009973;
+}
+	
+.mainh {
+color: #000;
+padding: 10px 60px;
+font-size: 17px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: Raleway, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+	
+.mainh p {
+text-align: justify;
+}
+
+.center{
+text-align: center;
+}
+	
+.main-headh {
+color: #004d99;
+font-size: 1.5em;
+font-weight: bold;
+line-height: 1.5em;
+}
+	
+.main-head2h{
+color: #000000;
+font-size: 1.7em;
+font-weight: bold;
+}
+	
+.main-head3h{
+color: #004d99;
+font-size: 1.3em;
+font-weight: bold;
+}
+	
+.mactoph {
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/mactop2h.jpg");
+width: calc(100% + 100px);
+height: 500px;
+margin-left: -50px;
+background-size: cover;
+background-position: center;
+}
+	
+.download-btn-headh {
+color: #004d00;
+font-size: 1.2em;
+font-weight: 600;
+}
+
+section.sech {
+width: 100%;
+display: table;
+}
+
+.centerh {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
+.triggerh {
+position: relative;
+background: transparent;
+display: inline-block;
+width: 200px;
+height: 60px;
+color: #006699;
+transition: 0.45s;
+border-radius: 60px;
+box-shadow: 8px 8px 0 0 #006699, inset 8px 8px 0 0 #006699;
+left: -5px;
+}
+
+.triggerh:hover{
+box-shadow: 0 0 0 0 #006699, inset 200px 60px 0 0 #006699;
+}
+
+.spanh {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+overflow: hidden;
+}
+
+.spanh strong {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 5px;
+top: 5px;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+}
+
+.clickh {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 100%;
+color: #fff;
+line-height: 60px;
+font-size: 1.2em;
+transition: top 0.45s;
+}
+
+.triggerh::before {
+content: "7.1MB .zip";
+color: #fff;
+font-size: 0.9em;
+width: 150px;
+height: 40px;
+line-height: 40px;
+background: #222;
+border-radius: 5px;
+top: 90px;
+left: calc(50% - 75px); 
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggerh::after {
+content: "";
+width: 0;
+height: 0;
+border: 10px solid transparent;
+border-bottom-color: #222;
+left: calc(50% - 10px); 
+top: 71px;
+position: absolute;
+opacity: 0; 
+visibility: hidden;
+transition: all 0.45s;
+}
+
+.triggerh:hover::before {
+opacity: 1;
+visibility: visible;
+top: 80px;
+}
+
+.triggerh:hover::after {
+opacity: 1;
+visibility: visible;
+top: 61px;
+}
+
+.triggerh:hover strong {
+top: -100%;
+}
+
+.triggerh:hover .clickh {
+top: 0;
+}
+
+.barcode-typeh{
+padding: 20px;
+}
+
+.type-imgh{
+width: 40%;
+margin: 0 auto;
+}
+
+.type-img2h{
+width: 20%;
+margin: 0 auto;
+}
+
+.type-imgh img,
+.type-img2h img{
+width: 100% !important;
+}
+	
+.macbgh{
+background-image: url("https://blog-imgs-138.fc2.com/h/e/l/helptopics/postalbg.jpg");
+width: calc(100% + 70px);
+height: 268px;
+margin-left: -50px;
+background-size: cover;
+background-position: left;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+z-index: 1;
+position: relative;
+padding: 15px;
+}
+	
+.macbgh::before{
+content: "";
+position: absolute;
+z-index: -1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0.3;
+}
+	
+.download-btn-head2h{
+color: #eeeeee !important;
+font-size: 1.3em;
+text-shadow: 5px 4px 5px #000;
+font-weight: 600;
+}
+	
+a.btn-bottomh{
+color: #fff;
+padding: 15px 20px;
+text-decoration: none !important;
+border: 3px solid #fff;
+font-size: 1.2em;
+letter-spacing: 2px;
+transition: 1s;
+width: 137px;
+}
+	
+a.btn-bottomh:hover{
+color: #00e6e6;
+border: 3px solid #00e6e6;
+transform: scale(1.07);
+}
+	
+.contactush{
+margin-left: -50px;
+}
+
+@media screen and (max-width: 1000px){
+
+.mainh{
+padding: 10px 30px;
+}
+
+.mactoph{
+width: calc(100% + 40px);
+height: 400px;
+margin-left: -20px;
+}
+
+.macbgh{
+width: calc(100% + 10px);
+margin-left: -20px;
+}
+
+.contactush{
+margin-left: -20px;
+}
+
+.type-imgh{
+width: 50%;
+}
+
+.type-img2h{
+width: 30%;
+}
+}
+
+@media screen and (max-width: 840px){
+
+#container{
+margin: 0 !important;
+}
+
+.mainh{
+font-size: 14px !important;
+padding: 10px 0;
+}
+
+.mactoph{
+width: calc(100% + 20px);
+margin-left: -10px;
+}
+
+.macbgh{
+width: calc(100% - 10px);
+margin-left: -10px;
+}
+
+.contactush{
+margin-left: 0px;
+}
+
+.barcode-typeh{
+padding: 20px 10px;
+}
+
+.type-imgh{
+width: 60%;
+}
+
+.type-img2h{
+width: 40%;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.mactoph{
+height: 300px;
+}
+
+.type-imgh{
+width: 80%;
+}
+
+.type-img2h{
+width: 50%;
+}
+}
+</style>
+<div class="mainh">
+<div class="center">
+<div class="mactoph"></div>
+</div>
+<br>
+<p>There are several varieties of barcodes and each one amongst them brings its distinctive execs and cons. It will be difficult to make a decision that which barcodes can go well together with your product from this immense variety of barcodes. And, most significantly, that barcodes can grant the foremost efficiency and business price for your enterprise.</p>
+<p>At DRPU, we’re proud to help agencies exploit the advantages of barcode technology. Let’s see some essential 1D and 2D barcode types for Macintosh users to help you discover the right answer for your team in selecting the correct barcode types. We’ll highlight the frequent uses for each barcode kind.</p>
+<br>
+<div class="center">
+<div class="download-btn-headh">MAC Barcode Generator - Corporate Edition</div>
+<br>
+<br>
+<section class="sech">
+<div class="centerh">
+<a rel="noopener" class="triggerh" href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software">
+<span class="spanh">
+<strong>Download</strong>
+<div class="clickh">CLICK HERE</div>
+</span>
+</a>
+</div>
+</section>
+</div>
+<br>
+<br>
+<br>
+<div class="main-headh">Barcode Fonts in Mac Barcode Generator - Corporate Edition</div>
+<br>
+<div class="main-head2h">1D Barcode Types</div>
+<br>
+<p>1D barcodes represent facts via varying the widths and spacing of parallel lines. These are typically said as linear barcodes. Length of a one-dimensional barcode is straight away tied to what proportion records it holds. 1D barcodes are used across corporation operations to save lots of time and build stock workflows a lot of economical.</p>
+<div class="barcode-typeh">
+<div class="main-head3h">CODE 39</div>
+<br>
+<p>Code39 barcodes are used to label product across several industries and are employed in the auto business and in the U.S. Department of Defense. It permits the employment of every digit and character. It may only encode 39 characters. Code39 remains a famed and versatile preference as a result of it eliminates the necessity to come up with a check digit—and will be decoded by approach of just about any barcode reader.</p>
+<p><strong>Industry : </strong>Automotive, Defence</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=363 height=117 alt="image" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/code39.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">CODE 128</div>
+<br>
+<p>Code 128 barcodes are high-density codes used for ordering and distribution in logistics and transportation industries. They’ll encode all characters from American Standard Code for Information Interchange 128 listing. These barcodes store big amounts of linear statistics, creating them ideally suited to working out shipped or prepackaged containers and things. </p>
+<p><strong>Industry : </strong>Supply Chain</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=379 height=82 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/inventcode128.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">CODABAR</div>
+<br>
+<p>Codabar barcodes are employed by suggests that of logistics and healthcare professionals, inclusive of photograph labs and libraries. They’re simple to print. Codabar will encode up to 16 characters with additional 4 start/stop characters. Benefits of Codabar barcodes embrace easy scanning and self-checking, that reduces blunders once getting into the code.</p>
+<p><strong>Industry : </strong>Logistics, Healthcare</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=283 height=117 alt="image" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/codabar.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">EAN CODE</div>
+<br>
+<p>EAN is a high-density barcode that may encode pretty giant quantities of records in a very little space. EAN barcodes are additionally accustomed label client goods worldwide. EAN-13 contains thirteen digits, whereas EAN-8 covers eight digits. EAN codes are handy for scanner to scan, making the scanning technique speedy and seamless.</p>
+<p><strong>Industry : </strong>Retail</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=306 height=84 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/inventean.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">EXTENDED CODE 39</div>
+<br>
+<p>Code 39 accustomed as the primary barcode to be capable to encode each numbers and letters. It will encode up to 43 characters. Extended Code 39 is an up-to-date model of Code 39, that makes use of combos of those encoded characters to permit it to indicate the entire vary of 128 American Standard Code for Information Interchange characters.</p>
+<p><strong>Industry : </strong>Military, Automobile purposes</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=363 height=117 alt="image" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/extendedcode39.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">INTERLEAVED 2 OF 5</div>
+<br>
+<p>Interleaved 2 of 5 barcodes are employed in packaging materials across the world. Since they'll modify excessive printing tolerances, they're best for printing. Interleaved 2 of 5 barcodes will encode 14 numeric digits. The Interleaved 2 of 5 barcode will solely encode numbers, and it doesn't need a check digit.</p>
+<p><strong>Industry : </strong>Packaging</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=213 height=101 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/itf.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">INDUSTRIAL 2 OF 5</div>
+<br>
+<p>Industrial 2 of 5 has been used chiefly for airline ticketing, and warehouse sorting. The areas in an Industrial 2 of 5 symbol spaces of fixed-width, so solely the bars are used to encode info. The "2 of 5" name derives from the actual fact that of the 5 bars that are used to encode each character, 2 are large and 3 are slender.</p>
+<p><strong>Industry : </strong>Warehouse, Airlines</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=313 height=101 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/indus.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">MODIFIED PLESSEY</div>
+<br>
+<p>Modified Plessey barcodes are used for inventory management in retail environments, like labeling grocery shelves. They’re conjointly used throughout warehouses and totally different storage services to guide correct stock checking. These codes will encode solely numbers, and can be created of any length—allowing them to encode nearly any amount of information.</p>
+<p><strong>Industry : </strong>Retail</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=255 height=83 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/wareMSI.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">POSTNET CODE</div>
+<br>
+<p>The United States mail uses the POSTNET barcode symbology to assist in leading mail. Every individual digit is drawn by using a set of five bars, 2 of that are full bars</p>
+<p><strong>Industry : </strong>communication services</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=222 height=38 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/postalpostnet.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">PLANET CODE</div>
+<br>
+<p>The United States mail uses the planet barcode to spot and track parts of mail within the course of delivery. In PLANET, the two-of-five are the short bars.</p>
+<p><strong>Industry : </strong>Postal services</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=254 height=53 alt="image" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/planet.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">UPC CODE</div>
+<br>
+<p>UPC barcodes are accustomed label and scan consumer items at points of sale round the world—mainly within the United States, however additionally within the UK, Australia, New Zealand and different countries. The UPC-A version encodes twelve numerical digits, whereas UPC-E could be a smaller variation that encodes only six numerical digits. UPC codes facilitate contour inventory observation within stores and warehouses.</p>
+<p><strong>Industry : </strong>Retail</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=333 height=126 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/pharmaupca.png">
+</div>
+</div>
+<br>
+<br>
+</div>
+<br>
+<div class="center">
+<div class="download-btn-headh">MAC Barcode Generator - Corporate Edition</div>
+<br>
+<br>
+<section class="sech">
+<div class="centerh">
+<a rel="noopener" class="triggerh" href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software">
+<span class="spanh">
+<strong>Download</strong>
+<div class="clickh">CLICK HERE</div>
+</span>
+</a>
+</div>
+</section>
+</div>
+<br>
+<br>
+<br>
+<div class="main-head2h">2D Barcode Types</div>
+<br>
+<p>Two-dimensional (or 2D) barcodes consistently signify the use the employment of two-dimensional symbols and shapes. 2D barcodes embrace some trendier barcode varieties, like the QR Code and PDF417. Error-protection formula is another advantage of 2d barcodes. These codes are designed to carry facts intact and scannable—even after being ripped, scraped or broken.</p>
+<div class="barcode-typeh">
+<div class="main-head3h">QR CODE</div>
+<br>
+<p>QR codes are most frequently used in the tracking and advertising initiatives, like advertisements, magazines and business cards. They’re versatile, provide an excessive fault tolerance and have fast readability, even though they can’t be examined with a laser scanner. They’ll be scanned on just about any machine with scanning capabilities and encode nearly any kind of information.</p>
+<p><strong>Industry : </strong>Retail, Entertainment, Advertising</p>
+<br>
+<div class="center">
+<div class="type-img2h">
+<img width=147 height=147 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/advertisementqr.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">PDF417</div>
+<br>
+<p>PDF417 codes are used for functions that need the storage of large quantities of information, like images, fingerprints and signatures. They’ll preserve over 1.1 KB of machine-readable information, creating them a great deal more practical than different 2d barcodes.</p>
+<p><strong>Industry : </strong>Logistics, Government</p>
+<br>
+<div class="center">
+<div class="type-imgh">
+<img width=361 height=64 alt="image" src="https://blog-imgs-138.fc2.com/h/e/l/helptopics/pdf417.png">
+</div>
+</div>
+<br>
+<br>
+<div class="main-head3h">DATAMATRIX</div>
+<br>
+<p>DataMatrix codes are sometimes used to label little things, goods and documents. Their little footprint makes them best for little product in logistics and operations. Almost like QR codes, they have high fault tolerance and quickly readability. DataMatrix codes offer high info density, which implies they take up much less area on merchandise and assets.</p>
+<p><strong>Industry : </strong>Electronics, Retail, Government</p>
+<br>
+<div class="center">
+<div class="type-img2h">
+<img width=128 height=128 alt="image" src="https://blog-imgs-138-origin.fc2.com/h/e/l/helptopics/datamatrix.png">
+</div>
+</div>
+<br>
+<br>
+</div>
+<div class="macbgh">
+<div>
+<div class="center">
+<div class="download-btn-head2h" style="color: #eeeeee !important;">MAC Barcode Generator - Corporate Edition</div>
+<br>
+<br>
+<a rel="noopener" href="https://www.barcodegenerator.us/downloads/BarcodeMaker-MacCorporate.zip" target="_blank" title="DRPU Barcode Maker Software" class="btn-bottomh">DOWNLOAD</a>
+</div>
+</div>
+</div>
+<br>
+<div class="contactush">
+<span style="font-weight: 600;">For more information contact us:</span>
+<br>
+<div>
+<span style="font-weight: 600;">Email:&nbsp;</span>
+<span>support@barcodegenerator.us</span>
+</div>
+<div>
+<span style="font-weight: 600;">Website:&nbsp;</span>
+<span>
+<a rel="noopener" href="https://www.barcodegenerator.us" target="_blank" title="Barcode Generator" style="text-decoration: none; color:#1a73e8;">www.barcodegenerator.us</a>
+</span>
+</div>
+</div>
+<br>
+</div>
